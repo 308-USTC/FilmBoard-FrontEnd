@@ -1,0 +1,204 @@
+p.indent2 {
+    text-indent: 2em;
+}
+
+.center {
+    text-align: center;
+}
+
+.deatil-content {
+    font-family: 微软雅黑;
+    line-height: 20.48px;
+    background: rgb(255, 255, 255);
+}
+
+.deatil-content .deatil-head{
+	padding: 15px;  border-color: rgb(172, 29, 16); color: rgb(255, 255, 255); border-radius: 4px; background-color: rgb(255, 176, 60);
+}
+
+.detail-super-title {
+    margin: 10px 0;
+    font-size: 2em;
+    font-weight: bold;
+    text-align: center;
+    color: rgb(255, 255, 255);
+}
+
+.detail-super-title section:first-child {
+    padding: 0.5em;
+    background: rgb(255, 176, 60);
+}
+
+.detail-super-title section:last-child {
+    margin: auto;
+    width: 0px;
+    border-top-width: 0.6em;
+    border-top-style: solid;
+    border-top-color: rgb(255, 176, 60);
+    border-left-width: 0.5em;
+    border-left-style: solid;
+    border-left-color: transparent;
+    border-right-width: 0.5em;
+    border-right-style: solid;
+    border-right-color: transparent;
+}
+
+.detail-title {
+    margin: 3em 0;
+    display: inline-block;
+}
+
+.detail-title-border {
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    font-size: 112.5%;
+    color: rgb(255, 255, 255);
+    border-color: rgb(255, 176, 60);
+}
+
+.detail-title-index {
+    display: inline-block;
+    padding: 0.1em;
+    line-height: 1em;
+    font-size: 112.5%;
+    background-color: rgb(255, 176, 60);
+}
+
+.detail-title-words {
+    display: inline-block;
+    padding: 0.2em;
+    color: rgb(42, 52, 58);
+}
+
+.detail-content-wraper {
+    border: 0.4em solid rgb(245, 245, 244);
+    display: inline-block;
+    background-color: rgb(254, 254, 254);
+    width: 65%;
+    line-height: 1.5em;
+}
+
+.detail-content-wraper > section {
+    margin: -0.4em 0.5em;
+    padding: 0.5em;
+    border-top-width: 0.5em;
+    border-top-style: solid;
+    border-top-color: rgb(254, 254, 254);
+    border-bottom-width: 0.5em;
+    border-bottom-style: solid;
+    border-bottom-color: rgb(254, 254, 254);
+}
+
+.oy {
+    text-align: center;
+    position: relative;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.oy > section {
+    font-weight: bold;
+    font-size: 1.5em;
+    margin: 1.5em 0;
+}
+
+.oy > section span {
+    color: orange;
+}
+
+.oy .chart{
+	margin: 0 auto; width: 650px; height: 500px;
+}
+
+.tableWrap2 table {
+    width: 650px;
+    margin: 0 auto;
+    clear: both;
+    margin-top: 20px;
+}
+
+.tableWrap2 table > thead > tr {
+    color: brown;
+}
+
+.tableWrap2 table > tbody > tr {
+    border-bottom: 3px dotted #ccc;
+}
+
+.tableWrap2 th, .tableWrap2 caption {
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.tableWrap2 td img.starPic {
+    width: 50px;
+    height: 50px;
+    border-radius: 30px;
+    border: 4px solid rgb(79, 192, 253);
+}
+
+.tableWrap2 td {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.tableWrap2 td:last-child {
+    color: rgb(255, 178, 62);
+    padding: 10px 0 5px 0;
+}
+
+.tableWrap2 td div {
+    margin-bottom: 5px;
+    font-weight: normal;
+}
+
+.tableWrap2 .fa-level-up {
+    color: red;
+}
+
+.tableWrap2 .fa-level-down {
+    color: rgb(79, 192, 253);
+}
+
+.twoCompare {
+    clear: both;
+    width: 650px;
+    margin: 0 auto;
+}
+
+.twoCompare table {
+    width: 300px;
+}
+
+.twoCompare td:first-child > div {
+    width: 25px;
+    height: 25px;
+    border-radius: 5px;
+    background: #ccc;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.twoCompare td:last-child,
+.twoCompare td:last-child > p {
+    color: black;
+    margin: 0;
+}
+
+.oy > div.cloud {
+    width: 550px;
+    height: 350px;
+    margin: 0 auto;
+}
+
+.orangeDiv{
+	background: url(../img/orange.png); background-repeat: no-repeat;
+}
+.blueDiv{
+	background: url(../img/blue.png); background-repeat: no-repeat;
+}
+.redDiv{
+	background: url(../img/red.png); background-repeat: no-repeat;
+}
