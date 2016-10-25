@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js">
+<!--<![endif]-->
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>上海电影特效工程技术研究中心大数据实验室 - 核心技术</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/icomoon-social.css">
+    <link rel="stylesheet" href="css/leaflet.css" />
+    <!--[if lte IE 8]>
+		    <link rel="stylesheet" href="css/leaflet.ie.css" />
+		<![endif]-->
+    <link rel="stylesheet" href="css/main.css">
+    <script src="js/modernizr-2.6.2-respond-1.1.0.min.js"></script>
+    <style>
+    #head1 {
+        padding: 50px 0 30px 0;
+        text-align: center;
+        font: 30px "微软雅黑", "黑体", sans-serif;
+    }
+    
+    .first-row .col-md-3 {
+        width: 20%;
+        padding: 30px;
+    }
+    
+    .first-row p {
+        font: 25px;
+        color: #808080;
+    }
+    
+    .img1 {
+        margin: 0 0 40px 0;
+        text-align: center;
+    }
+    
+    .img2 {
+        margin: 0 0 64px 0;
+        text-align: center;
+    }
+    
+    .second-row p {
+        font: 25px "微软雅黑", "黑体", sans-serif;
+    }
+    
+    .forth-row .col-md-3 {
+        font: 20px "微软雅黑", "黑体", sans-serif;
+    }
+    
+    .forth-row .col-md-1 {
+        font: 80px "微软雅黑", "黑体", sans-serif;
+        font-weight: bold;
+        padding-left: 40px;
+    }
+    
+    .fifth-row .col-md-2 {
+        width: 12.5%;
+        text-align: center;
+    }
+    
+    .fifth-row p {
+        border-radius: 50%;
+        border: 2px solid red;
+        width: 100px;
+        height: 100px;
+        font: 20px/90px "微软雅黑", "黑体", sans-serif;
+    }
+    
+    .sixth-row .col-md-4 {
+        padding: 30px 0 30px 0;
+    }
+    
+    .sixth-row-p1 {
+        font: 20px "微软雅黑", "黑体", sans-serif;
+        margin-bottom: 10px;
+    }
+    
+    .sixth-row-p2 {
+        font: 30px "微软雅黑", "黑体", sans-serif;
+    }
+    
+    .seven-row .col-md-6 {
+        text-align: center;
+        margin: 20px 0 20px 0;
+    }
+    
+    @media (max-width: 1200px) {
+        .first-row .col-md-3 {
+            width: 30%;
+            text-align: center;
+        }
+    }
+    
+    @media (max-width: 1000px) {
+        .first-row .col-md-3 {
+            width: 100%;
+            text-align: center;
+        }
+    }
+    
+    @media (max-width: 1000px) {
+        .fifth-row .col-md-2 {
+            width: 25%;
+            text-align: center;
+            float: left;
+        }
+    }
+    
+    @media (max-width: 800px) {
+        .fifth-row .col-md-2 {
+            width: 33%;
+            text-align: center;
+            float: left;
+        }
+    }
+    </style>
+</head>
+
+<body>
+    <!--[if lt IE 7]>
+            <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
+        <![endif]-->
+    <!-- Navigation & Logo-->
+    <div class="mainmenu-wrapper">
+        <div class="container">
+            <nav id="mainmenu" class="mainmenu">
+                <ul>
+                    <li class="logo-wrapper">
+                        <a href="index.html"><img src="img/mPurpose-logo.png" style="width: 50%;" alt="上海大学影视学院大数据中心"></a>
+                    </li>
+                    <li class="active">
+                        <a href="index.html">主页</a>
+                    </li>
+                    <li>
+                        <a href="services.html">产品服务</a>
+                    </li>
+                    <li>
+                        <a href="features.html">核心技术</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+    <div class="section" style="background: #FFF;padding:0 0 50px 0;">
+        <div class="container">
+            <div id="head1">大数据挖掘体系优势
+                <hr />
+            </div>
+            <div class="first-row">
+                <div class="col-md-3">
+                    <div class="img1">
+                        <img src="./img/first-row1.png" alt="" />
+                    </div>
+                    <p style="text-align: center;color:red;margin-bottom: 25px;font-weight: bold;">
+                        海量数据，掌控趋势</p>
+                    <p>全量原始数据留存，海量历史数据可追踪</p>
+                    <p>全面掌控数据的历史规律、变化趋势</p>
+                </div>
+                <div class="col-md-3">
+                    <div class="img1">
+                        <img src="./img/first-row2.png" alt="" />
+                    </div>
+                    <p style="text-align: center;color:red;margin-bottom: 25px;font-weight: bold;">
+                        应需而变，动态分析
+                    </p>
+                    <p>不受抽样调研的时空限制，随时响应客户的分析需求，快速获得分析结果</p>
+                    <p>不受抽样调研的问卷限制，应需灵活定制各种个性化分析维度，全方位展现大数据分析结果</p>
+                </div>
+                <div class="col-md-3">
+                    <div class="img1">
+                        <img src="./img/first-row3.png" alt="" />
+                    </div>
+                    <p style="text-align: center;color:red;margin-bottom: 25px;font-weight: bold;">
+                        自然语言处理技术
+                    </p>
+                    <p>利用人工智能技术和机器学习算法，深入理解文本的语义</p>
+                    <p>采用分类、聚类、抽取技术，深度挖掘客户目标的内涵和外延，深度探索对象之间的语义关联</p>
+                    <p>利用分布式架构，使自然语言处理算法轻松应对海量数据，实现高效分析</p>
+                </div>
+                <div class="col-md-3">
+                    <div class="img1">
+                        <img src="./img/first-row4.png" alt="" />
+                    </div>
+                    <p style="text-align: center;color:red;margin-bottom: 25px;font-weight: bold;">
+                        精准受众分析
+                    </p>
+                    <p>对于目标受众的属性和兴趣进行建模，揭示用户兴趣和关注点</p>
+                    <p>基于用户社交网络挖掘，发现意见领袖和最有价值的受众群体</p>
+                </div>
+                <div class="col-md-3">
+                    <div class="img1">
+                        <img src="./img/first-row5.png" alt="" />
+                    </div>
+                    <p style="text-align: center;color:red;margin-bottom: 25px;font-weight: bold;">
+                        关联分析，洞察商业价值</p>
+                    <p>商业品牌口碑分析和受众分析，探查商业价值、发现商业机会</p>
+                    <p>商业品牌和明星、影视作品的大数据关联分析，实现精准匹配</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="section" style="padding:0 0 50px 0;">
+        <div class="img2">
+            <img src="./img/xtab.png" alt="" />
+        </div>
+        <div class="container">
+            <div class="second-row">
+                <div class="col-md-3">
+                    <p style="color:#A9A9A9;">BIG DATA MINING TECHNOLOGIES</p>
+                    <p>大数据挖掘技术</p>
+                </div>
+                <div class="col-md-3" style="padding-top: 20px;">
+                    <!-- <img src="./img/first-row1.png" alt="" /> -->
+                </div>
+            </div>
+            <div class="third-row">
+                <div class="col-md-12">
+                    <hr style="height:3px;border:none;border-top:3px groove skyblue;" />
+                    <p style="color:#A9A9A9;font-size: 16px;">大数据挖掘技术（Big Data Mining Technologies）采用分布式的计算架构，开发适合分布式环境的算法和模型，使之能高效处理全网全媒体的TB级别甚至PB级别的数据，实现大数据的聚类、分类、关联等分析。</p>
+                </div>
+            </div>
+            <div class="forth-row">
+                <div class="col-md-1">
+                    <p style="color: #808080;">1</p>
+                </div>
+                <div class="col-md-3">
+                    <p style="color:#A9A9A9;">Full coverage of all Internet Medias</p>
+                    <p style="font-size:25px;">全网媒体覆盖</p>
+                </div>
+            </div>
+            <div class="fifth-row">
+                <div class="col-md-12" style="margin-top: 20px;"></div>
+                <div class="col-md-2">
+                    <p>论坛</p>
+                </div>
+                <div class="col-md-2">
+                    <p>新闻站点</p>
+                </div>
+                <div class="col-md-2">
+                    <p>微博</p>
+                </div>
+                <div class="col-md-2">
+                    <p>博客站点</p>
+                </div>
+                <div class="col-md-2">
+                    <p>电视台</p>
+                </div>
+                <div class="col-md-2">
+                    <p>纸媒</p>
+                </div>
+                <div class="col-md-2">
+                    <p>视频网站</p>
+                </div>
+                <div class="col-md-2">
+                    <p>音乐站点</p>
+                </div>
+            </div>
+            <div class="clearfix"></div>
+            <div class="sixth-row" style="text-align: center;">
+                <div class="col-md-4">
+                    <div class="sixth-row-p1">用户抓取数</div>
+                    <div class="sixth-row-p2">700,000,000个+</div>
+                </div>
+                <div class="col-md-4">
+                    <div class="sixth-row-p1">历史数据储存</div>
+                    <div class="sixth-row-p2">1,700,000GB+</div>
+                </div>
+                <div class="col-md-4">
+                    <div class="sixth-row-p1">每日数据采集</div>
+                    <div class="sixth-row-p2">10,000,000条+</div>
+                </div>
+            </div>
+            <div class="seven-row">
+                <div class="col-md-6"><img src="./img/seven-row1.png" alt="" /></div>
+                <div class="col-md-6"><img src="./img/seven-row2.png" alt="" /></div>
+                <div class="col-md-6"><img src="./img/seven-row3.png" alt="" /></div>
+                <div class="col-md-6"><img src="./img/seven-row4.png" alt="" /></div>
+            </div>
+        </div>
+    </div>
+    <div class="section" style="background: #FFF;padding: 0 0 50px 0;">
+        <div class="container">
+            <div class="second-row" style="padding-top: 50px;">
+                <div class="col-md-3">
+                    <p style="color:#A9A9A9;">Natural Language Processing</p>
+                    <p>自然语言处理技术</p>
+                </div>
+                <div class="col-md-3" style="padding-top: 40px;">
+                    <img src="./img/second-row2.png" alt="" />
+                </div>
+            </div>
+            <div class="col-md-12">
+                <hr style="height:3px;border:none;border-top:3px groove skyblue;" />
+                <p style="color:#A9A9A9;font-size: 16px;">自然语言理解技术（Natural Language Processing）就是利用人工智能算法、机器学习模型，使计算机可以深入分析和理解文本信息的内容，包括对文本信息的分类、聚类、对象识别、关系抽取、话题检测等。</p>
+            </div>
+            <div class="seven-row">
+                <div class="col-md-6"><img src="./img/seven-row5.png" alt="" /></div>
+                <div class="col-md-6"><img src="./img/seven-row6.png" alt="" /></div>
+                <div class="col-md-6"><img src="./img/seven-row7.png" alt="" /></div>
+                <div class="col-md-6"><img src="./img/seven-row8.png" alt="" /></div>
+            </div>
+        </div>
+    </div>
+    <!-- Footer -->
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-footer col-md-3 col-xs-6">
+                    <h3>最新报告</h3>
+                    <div class="portfolio-item">
+                        <div class="portfolio-image">
+                            <a href="mghxd.html"><img src="img/mghxd-bg.jpg" alt="《湄公河行动》"></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-footer col-md-3 col-xs-6">
+                    <h3>站点链接</h3>
+                    <ul class="no-list-style footer-navigate-section">
+                        <li><a href="#">大事记</a></li>
+                        <li><a href="#">服务/报告</a></li>
+                        <li><a href="#">合作</a></li>
+                        <li><a href="#">招聘</a></li>
+                        <li><a href="#">帮助</a></li>
+                    </ul>
+                </div>
+                <div class="col-footer col-md-4 col-xs-6">
+                    <h3>联系我们</h3>
+                    <p class="contact-us-details">
+                        <b>地址:</b> 上海市宝山区上大路99号
+                        <br/>
+                        <b>电话:</b> <a href="http://www.shu.edu.cn/Default.aspx?tabid=8558">电话查询</a>
+                        <br/>
+                        <b>邮编:</b> 200444
+                        <br/>
+                        <b>投稿:</b> yingshitongxunshe@163.com</a>
+                    </p>
+                </div>
+                <div class="col-footer col-md-2 col-xs-6">
+                    <h3>在线联系</h3>
+                    <ul class="footer-stay-connected no-list-style">
+                        <li>
+                            <a href="http://weibo.com/shangdayingshi"><img src="img/weibo.png">新浪微博</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="footer-copyright">Copyright &copy; 2016.School of Film & TV,SHU All rights reserved.<a target="_blank" href="http://www.suftv.shu.edu.cn/">上海大学影视学院</a></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Javascripts -->
+    <script src="js/jquery-1.9.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="http://cdn.leafletjs.com/leaflet-0.5.1/leaflet.js"></script>
+    <script src="js/jquery.fitvids.js"></script>
+    <script src="js/jquery.sequence-min.js"></script>
+    <script src="js/jquery.bxslider.js"></script>
+    <script src="js/main-menu.js"></script>
+    <script src="js/template.js"></script>
+</body>
+
+</html>

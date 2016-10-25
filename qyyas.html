@@ -1,0 +1,595 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js">
+<!--<![endif]-->
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>上海电影特效工程技术研究中心大数据实验室 - 产品服务 - 七月与安生</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/icomoon-social.css">
+    <link rel="stylesheet" href="css/leaflet.css" />
+    <!--[if lte IE 8]>
+		    <link rel="stylesheet" href="css/leaflet.ie.css" />
+		<![endif]-->
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/jqcloud.css">
+    <script src="js/modernizr-2.6.2-respond-1.1.0.min.js"></script>
+</head>
+
+<body>
+    <!--[if lt IE 7]>
+            <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
+        <![endif]-->
+    <!-- Navigation & Logo-->
+    <div class="mainmenu-wrapper">
+        <div class="container">
+            <nav id="mainmenu" class="mainmenu">
+                <ul>
+                    <li class="logo-wrapper">
+                        <a href="index.html"><img src="img/mPurpose-logo.png" style="width: 50%;" alt="上海大学影视学院大数据中心"></a>
+                    </li>
+                    <li class="active">
+                        <a href="index.html">主页</a>
+                    </li>
+                    <li>
+                        <a href="services.html">产品服务</a>
+                    </li>
+                    <li>
+                        <a href="features.html">核心技术</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+    <!-- Page Title -->
+    <div class="section section-breadcrumbs">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h1>七月与安生</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="section">
+        <div class="container">
+            <div class="row">
+                <!-- Product Image & Available Colors -->
+                <div class="col-sm-6">
+                    <div class="product-image-large">
+                        <img src="img/qyyas-bg.jpg">
+                    </div>
+                </div>
+                <!-- End Product Image & Available Colors -->
+                <!-- Product Summary & Options -->
+                <div class="col-sm-6 product-details">
+                    <h4>总票房：<div class="price">1.68亿</div></h4>
+                    <h5>剧情简介：</h5>
+                    <p>“13岁” , 奏响了青春序曲的第一个音符。七月与安生从踏入中学校门的一刻起，便宿命般地成为了朋友。她们一个恬静如水，一个张扬似火，性格截然不同、却又互相吸引。她们以为会永远陪伴在彼此的生命里，然而青春的阵痛带来的不是别的，而是对同一个男生的爱——18岁那年，她们遇见了苏家明，至此，成长的大幕轰然打开。
+                    </p>
+                </div>
+                <!-- End Product Summary & Options -->
+                <!-- Full Description & Specification -->
+                <div class="col-sm-12">
+                    <div class="tabbable">
+                        <!-- Tabs -->
+                        <ul class="nav nav-tabs product-details-nav">
+                            <li class="active"><a href="#tab1" data-toggle="tab">图表数据</a></li>
+                            <li><a href="#tab2" data-toggle="tab">基本信息</a></li>
+                            <li><a href="#tab3" data-toggle="tab">其他信息</a></li>
+                        </ul>
+                        <!-- Tab Content (Full Description) -->
+                        <div class="tab-content product-detail-info">
+                            <div class="tab-pane active" id="tab1">
+                                <div id="bar_stack_container" style="height: 500px; width: 100%;"></div>
+                                <div id="map_container" style="height: 700px; width: 100%;"></div>
+                                <div id="pie2_container" style="height: 300px; width: 100%;"></div>
+                                <section style="text-align: center;">
+                                    <h2>热词</h2></section>
+                                <div id="key_words" class="cloud" style="height: 300px; width: 100%;"></div>
+                            </div>
+                            <!-- Tab Content (Specification) -->
+                            <div class="tab-pane" id="tab2">
+                                <table>
+                                    <tr>
+                                        <td>票房</td>
+                                        <td>1.68亿</td>
+                                    </tr>
+                                    <tr>
+                                        <td>上映时间</td>
+                                        <td>2016-09-30</td>
+                                    </tr>
+                                    <tr>
+                                        <td>导演</td>
+                                        <td>曾国祥</td>
+                                    </tr>
+                                    <tr>
+                                        <td>主演</td>
+                                        <td>周冬雨，马思纯，李程彬</td>
+                                    </tr>
+                                    <tr>
+                                        <td>类型</td>
+                                        <td>剧情、爱情、青春</td>
+                                    </tr>
+                                    <tr>
+                                        <td>国家及地区</td>
+                                        <td>中国</td>
+                                    </tr>
+                                    <tr>
+                                        <td>制式</td>
+                                        <td>2D</td>
+                                    </tr>
+                                    <tr>
+                                        <td>发行公司</td>
+                                        <td>极客影业（上海）有限公司、嘉映影业有限公司、阿里巴巴影业集团有限公司、我们制作有限公司</td>
+                                    </tr>
+                                </table>
+                            </div>
+                            <div class="tab-pane" id="tab3">
+                                <p>其他数据收集整理ing......</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- End Full Description & Specification -->
+            </div>
+        </div>
+    </div>
+    <!-- Footer -->
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-footer col-md-3 col-xs-6">
+                    <h3>最新报告</h3>
+                    <div class="portfolio-item">
+                        <div class="portfolio-image">
+                            <a href="mghxd.html"><img src="img/mghxd-bg.jpg" alt="《湄公河行动》"></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-footer col-md-3 col-xs-6">
+                    <h3>站点链接</h3>
+                    <ul class="no-list-style footer-navigate-section">
+                        <li><a href="page-blog-posts.html">大事记</a></li>
+                        <li><a href="page-portfolio-3-columns-2.html">服务/报告</a></li>
+                        <li><a href="page-services-3-columns.html">合作</a></li>
+                        <li><a href="page-pricing.html">招聘</a></li>
+                        <li><a href="page-faq.html">帮助</a></li>
+                    </ul>
+                </div>
+                <div class="col-footer col-md-4 col-xs-6">
+                    <h3>联系我们</h3>
+                    <p class="contact-us-details">
+                        <b>地址:</b> 上海市宝山区上大路99号
+                        <br/>
+                        <b>电话:</b> <a href="http://www.shu.edu.cn/Default.aspx?tabid=8558">电话查询</a>
+                        <br/>
+                        <b>邮编:</b> 200444
+                        <br/>
+                        <b>投稿:</b> yingshitongxunshe@163.com</a>
+                    </p>
+                </div>
+                <div class="col-footer col-md-2 col-xs-6">
+                    <h3>在线联系</h3>
+                    <ul class="footer-stay-connected no-list-style">
+                        <li>
+                            <a href="http://weibo.com/shangdayingshi"><img src="img/weibo.png">新浪微博</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="footer-copyright">Copyright &copy; 2016.School of Film & TV,SHU All rights reserved.<a target="_blank" href="http://www.suftv.shu.edu.cn/">上海大学影视学院</a></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Javascripts -->
+    <script src="js/jquery-1.9.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/leaflet.js"></script>
+    <script src="js/jquery.fitvids.js"></script>
+    <script src="js/jquery.sequence-min.js"></script>
+    <script src="js/jquery.bxslider.js"></script>
+    <script src="js/main-menu.js"></script>
+    <script src="js/template.js"></script>
+    <script src="http://cdn.bootcss.com/jqcloud/1.0.4/jqcloud-1.0.4.min.js"></script>
+    <script src="http://cdn.bootcss.com/echarts/3.2.3/echarts.min.js"></script>
+    <script type="text/javascript" src="http://echarts.baidu.com/gallery/vendors/echarts/map/js/china.js"></script>
+    <script>
+    var bar_stack_dom = document.getElementById("bar_stack_container");
+    var bar_stack_Chart = echarts.init(bar_stack_dom);
+    var bar_stack_app = {};
+    bar_stack_option = null;
+
+    bar_stack_option = {
+        title: {
+            text: '票房数据',
+            //subtext: '纯属虚构',
+            x: 'left'
+        },
+        tooltip: {
+            trigger: 'axis',
+            axisPointer: { // 坐标轴指示器，坐标轴触发有效
+                type: 'shadow' // 默认为直线，可选为：'line' | 'shadow'
+            }
+        },
+        legend: {
+            data: ['日票房', '平均票房', '总票房', '评论数']
+        },
+        grid: {
+            left: '3%',
+            right: '4%',
+            bottom: '3%',
+            containLabel: true
+        },
+        xAxis: [{
+            type: 'category',
+            data: ['09/27', '09/28', '09/29', '09/30', '10/01', '10/02', '10/03', '10/04', '10/05', '10/06', '10/07', '10/08', '10/09', '10/10', '10/11', '10/12', '10/13', '10/14', '10/15']
+        }],
+        yAxis: [{
+            name: '万元',
+            type: 'value',
+        }, {
+            name: '条',
+            type: 'value',
+        }],
+        series: [{
+            name: '日票房',
+            type: 'line',
+            data: [575.2, 550, 223, 58.5, 53.2, 58.4, 56.9, 51.3, 52, 50.1, 37.6, 24.9, 27.4, 15.5, 15.9, 16.5, 16.6, 4.6, 10.5]
+        }, {
+            name: '评论数',
+            type: 'line',
+            yAxisIndex: 1,
+            data: [906, 789, 659,467, 522, 518, 506, 423, 387, 384, 363, 354, 219, 182, 153, 153, 146, 100, 13]
+        }, ]
+    };
+
+    bar_stack_Chart.setOption(bar_stack_option, true);
+
+    /*************************************************/
+    /******************* 地域信息 ***********************/
+    /*************************************************/
+
+
+    var map_dom = document.getElementById("map_container");
+    var map_Chart = echarts.init(map_dom);
+    var map_option = null;
+
+    function randomData() {
+        return Math.round(Math.random() * 1000);
+    }
+
+    map_option = {
+        title: {
+            text: '观众地域分布',
+            subtext: '纯属虚构',
+            x: 'center', //位置 也可为left
+            y: '10%',
+        },
+        tooltip: {
+            trigger: 'item',
+            formatter: "{b} : {c} 人"
+        },
+        /*legend: {
+        	orient: 'vertical',
+        	left: 'left',
+        	data:['电影1']
+        },*/
+        visualMap: {
+            min: 0,
+            max: 2500,
+            left: 'left',
+            top: 'center',
+            text: ['高', '低'], // 文本，默认为数值文本
+            calculable: true
+        },
+        toolbox: {
+            show: true,
+            orient: 'vertical',
+            left: 'right',
+            top: 'center',
+            feature: {
+                dataView: {
+                    readOnly: false
+                },
+                restore: {},
+                saveAsImage: {}
+            }
+        },
+        series: [{
+            name: '《湄公河行动》',
+            type: 'map',
+            mapType: 'china',
+            roam: false,
+            label: {
+                normal: {
+                    show: true
+                },
+                emphasis: {
+                    show: true
+                }
+            },
+            data: [{
+                name: '北京',
+                value: randomData()
+            }, {
+                name: '天津',
+                value: randomData()
+            }, {
+                name: '上海',
+                value: randomData()
+            }, {
+                name: '重庆',
+                value: randomData()
+            }, {
+                name: '河北',
+                value: randomData()
+            }, {
+                name: '河南',
+                value: randomData()
+            }, {
+                name: '云南',
+                value: randomData()
+            }, {
+                name: '辽宁',
+                value: randomData()
+            }, {
+                name: '黑龙江',
+                value: randomData()
+            }, {
+                name: '湖南',
+                value: randomData()
+            }, {
+                name: '安徽',
+                value: randomData()
+            }, {
+                name: '山东',
+                value: randomData()
+            }, {
+                name: '新疆',
+                value: randomData()
+            }, {
+                name: '江苏',
+                value: randomData()
+            }, {
+                name: '浙江',
+                value: randomData()
+            }, {
+                name: '江西',
+                value: randomData()
+            }, {
+                name: '湖北',
+                value: randomData()
+            }, {
+                name: '广西',
+                value: randomData()
+            }, {
+                name: '甘肃',
+                value: randomData()
+            }, {
+                name: '山西',
+                value: randomData()
+            }, {
+                name: '内蒙古',
+                value: randomData()
+            }, {
+                name: '陕西',
+                value: randomData()
+            }, {
+                name: '吉林',
+                value: randomData()
+            }, {
+                name: '福建',
+                value: randomData()
+            }, {
+                name: '贵州',
+                value: randomData()
+            }, {
+                name: '广东',
+                value: randomData()
+            }, {
+                name: '青海',
+                value: randomData()
+            }, {
+                name: '西藏',
+                value: randomData()
+            }, {
+                name: '四川',
+                value: randomData()
+            }, {
+                name: '宁夏',
+                value: randomData()
+            }, {
+                name: '海南',
+                value: randomData()
+            }, {
+                name: '台湾',
+                value: randomData()
+            }, {
+                name: '香港',
+                value: randomData()
+            }, {
+                name: '澳门',
+                value: randomData()
+            }]
+        }]
+    };;
+
+
+    map_Chart.setOption(map_option, true);
+
+
+    ////////////////////////////////////////////////
+
+
+    var pie2_dom = document.getElementById("pie2_container");
+    var pie2_Chart = echarts.init(pie2_dom);
+    var pie2_option = null
+
+    pie2_option = {
+        title: {
+            text: '观众分析',
+            x: 'center'
+        },
+        tooltip: {
+            trigger: 'item',
+            formatter: "{b} : {c}%"
+        },
+        legend: {
+            orient: 'vertical',
+            left: 'left',
+            data: ['电影1']
+        },
+        series: [{
+            name: '性别比例',
+            type: 'pie',
+            radius: '50%',
+            center: ['20%', '60%'],
+            data: [{
+                value: 63.5,
+                name: '男性'
+            }, {
+                value: 36.5,
+                name: '女性'
+            }],
+            itemStyle: {
+                emphasis: {
+                    shadowBlur: 10,
+                    shadowOffsetX: 0,
+                    shadowColor: 'rgba(0, 0, 0, 0.5)'
+                }
+            }
+        }, {
+            name: '年龄分布',
+            type: 'pie',
+            radius: ['35%', '50%'],
+            center: ['70%', '60%'],
+            data: [{
+                value: 5,
+                name: '70后'
+            }, {
+                value: 14,
+                name: '80后'
+            }, {
+                value: 26,
+                name: '90后'
+            }, {
+                value: 25,
+                name: '00后'
+            }, {
+                value: 18,
+                name: '60后'
+            }, ],
+            itemStyle: {
+                emphasis: {
+                    shadowBlur: 10,
+                    shadowOffsetX: 0,
+                    shadowColor: 'rgba(0, 0, 0, 0.5)'
+                }
+            }
+        }]
+    };
+
+    pie2_Chart.setOption(pie2_option, true);
+
+    /////////////////////////////////////////////////
+    ///
+    ///
+
+    var word_list = [{
+        text: "演技",
+        weight: 3427,
+        link: "#"
+    }, {
+        text: "青春片",
+        weight: 2144,
+        html: {
+            title: "My Title",
+            "class": "custom-class"
+        },
+        link: {
+            href: "http://jquery.com/",
+            target: "_blank"
+        }
+    }, {
+        text: "不错",
+        weight: 3671
+    }, {
+        text: "剧情",
+        weight: 1989
+    }, {
+        text: "故事",
+        weight: 2787
+    }, {
+        text: "狗血",
+        weight: 1341
+    }, {
+        text: "闺蜜",
+        weight: 1069
+    }, {
+        text: "矫情",
+        weight: 1181
+    }, {
+        text: "女生",
+        weight: 1404
+    }, {
+        text: "人生",
+        weight: 1712
+    }, {
+        text: "友情",
+        weight: 1150
+    }, {
+        text: "结局",
+        weight: 1194
+    }, {
+        text: "细腻",
+        weight: 1124
+    }, {
+        text: "男主",
+        weight: 561
+    }, {
+        text: "国产",
+        weight: 1427
+    }, {
+        text: "演员",
+        weight: 1165
+    }, {
+        text: "感情",
+        weight: 993
+    }, {
+        text: "女主",
+        weight: 428
+    }, {
+        text: "电影院",
+        weight: 646
+    }, {
+        text: "女孩",
+        weight: 1486
+    }, {
+        text: "流浪",
+        weight: 655
+    }, {
+        text: "情节",
+        weight: 842
+    }, {
+        text: "爱情",
+        weight: 927
+    }];
+
+    $(function() {
+        $("#key_words").jQCloud(word_list);
+    });
+    </script>
+</body>
+
+</html>
