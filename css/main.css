@@ -2,7 +2,7 @@
 	General Style
 --------------------------------------------------------------------------*/
 body {
-  background: url(../img/page-background.png);
+  background: #f2f2f2;/*url(../img/page-background.png);*/
 }
 .section {
   padding: 30px 0;
@@ -68,19 +68,17 @@ div[class*="span"] {
 	Typography Style
 --------------------------------------------------------------------------*/
 body {
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 14px;
+  font-family: 'HanHei SC', 'PingFang SC', 'Helvetica Neue', 'Helvetica', 'STHeitiSC-Light', 'Arial', sans-serif;
+  font-size: 12px;
   line-height: 20px;
   color: #535b60;
 }
 h1 {
   color: #53555c;
-  font-family: 'Open Sans', sans-serif;
   font-weight: 800;
 }
 h2 {
   color: #53555c;
-  font-family: 'Open Sans', sans-serif;
   font-size: 2em;
   border-bottom: 2px solid #53555c;
   line-height: 1.5em;
@@ -88,20 +86,18 @@ h2 {
   padding-left: 10px;
 }
 h3 {
-  font-family: 'Open Sans', sans-serif;
   color: #53555c;
-  font-size: 1.5em;
+  font-size: 1em;
 }
 h4 {
-  font-family: 'Open Sans', sans-serif;
   color: #53555c;
   margin-bottom: 10px;
 }
 a {
-  color: #4f8db3;
+  color: #666;
 }
 a:hover {
-  color: #2f556d;
+  color: #666;
 }
 .copyrights{
 	text-indent:-9999px;
@@ -110,6 +106,7 @@ a:hover {
 	font-size:0;
 	overflow:hidden;
 }
+
 /*--------------------------------------------------------------------------
 +	Services Style
 --------------------------------------------------------------------------*/
@@ -118,16 +115,16 @@ a:hover {
   background: #FFF;
   margin: 20px 10px;
   text-align: center;
-  padding: 30px 20px;
-  -webkit-border-radius: 5px;
+  padding: 2px;
+  background-clip: padding-box;
+  /*-webkit-border-radius: 5px;
   -webkit-background-clip: padding-box;
   -moz-border-radius: 5px;
   -moz-background-clip: padding;
   border-radius: 5px;
-  background-clip: padding-box;
   -webkit-box-shadow: 0 0 3px #999;
   -moz-box-shadow: 0 0 3px #999;
-  box-shadow: 0 0 3px #999;
+  box-shadow: 0 0 3px #999;*/
   color: 0 0 3px #999;
 }
 .service-wrapper h3 {
@@ -375,7 +372,6 @@ a:hover {
 }
 .contact-us-details {
   margin: 20px 0;
-  font-size: 0.9em;
 }
 /*--------------------------------------------------------------------------
 +	Video Wrapper Style
@@ -1424,16 +1420,16 @@ span.color-red {
   position: relative;
   background: #FFF;
   margin-bottom: 20px;
-  border: 8px solid #FFF;
-  -webkit-border-radius: 5px;
+  border: 2px solid #FFF;
+  /*-webkit-border-radius: 5px;
   -webkit-background-clip: padding-box;
   -moz-border-radius: 5px;
   -moz-background-clip: padding;
-  border-radius: 5px;
+  border-radius: 5px;*/
   background-clip: padding-box;
-  -webkit-box-shadow: inset 0 1px #fff,0 0 8px #c8cfe6;
+  /*-webkit-box-shadow: inset 0 1px #fff,0 0 8px #c8cfe6;
   -moz-box-shadow: inset 0 1px #fff,0 0 8px #c8cfe6;
-  box-shadow: inset 0 1px #fff,0 0 8px #c8cfe6;
+  box-shadow: inset 0 1px #fff,0 0 8px #c8cfe6;*/
   color: inset 0 1px #fff,0 0 8px #c8cfe6;
   -webkit-transition: all .5s ease;
   -moz-transition: all .5s ease;
@@ -1454,9 +1450,9 @@ span.color-red {
   -ms-transition: all .25s ease;
   transition: all .25s ease;
 }
-.portfolio-item:hover {
-  border: 8px solid #4f8db3;
-}
+/*.portfolio-item:hover {
+  border: 2px solid #2b2b2b;
+}*/
 .portfolio-item:hover .portfolio-image img {
   position: relative;
   -webkit-transform: scale(1.1) rotate(2deg);
@@ -1710,23 +1706,29 @@ span.color-red {
 	Footer Style
 --------------------------------------------------------------------------*/
 .footer {
-  background: #222;
-  color: #A0A0A0;
+  background: #f2f2f2;
+  color: #666;
   padding: 0 20px 10px 20px;
-  border-top: 4px solid #4f8db3;
+  border-top: 0;/*4px solid #4f8db3;*/
   margin-top: 20px;
-  -webkit-box-shadow: 0 -1px 12px rgba(0,0,0,0.4);
+  font-size: 0.9em;
+  /*-webkit-box-shadow: 0 -1px 12px rgba(0,0,0,0.4);
   -moz-box-shadow: 0 -1px 12px rgba(0,0,0,0.4);
   box-shadow: 0 -1px 12px rgba(0,0,0,0.4);
-  color: 0 -1px 12px rgba(0,0,0,0.4);
+  color: 0 -1px 12px rgba(0,0,0,0.4);*/
 }
 .footer h3 {
-  color: #E4E4E4;
-  font-size: 1.3em;
-  border-bottom: 1px dotted #7C7C7C;
+  color: #333;
+  font-size: 1em;
+  font-weight: bold;
+  /*border-top: 1px solid #d6d6d6;*/
 }
 .footer ul {
   padding: 0;
+}
+.footer hr {
+  margin: 0;
+  border-top: 1px solid #d6d6d6;
 }
 .footer-navigate-section li {
   line-height: 20px !important;
@@ -1735,7 +1737,7 @@ span.color-red {
 .footer-copyright {
   text-align: center;
   color: #7C7C7C;
-  border-top: 1px dotted #7C7C7C;
+  border-top: 1px solid #d6d6d6;
   padding-top: 10px;
   font-size: 0.9em;
 }
@@ -1966,7 +1968,7 @@ span.color-red {
 .sequence-pagination-wrapper {
   position: absolute;
   bottom: 10px;
-  right: 20px;
+  right: 200px;
   z-index: 99;
 }
 .sequence-pagination {
@@ -1980,32 +1982,37 @@ span.color-red {
 .sequence-pagination li {
   display: inline-block;
   *display: inline;
-  width: 14px;
-  height: 14px;
+  width: 40px;
+  height: 4px;
   margin: 0 4px;
   text-indent: -999em;
-  border: 4px solid #4f8db3;
+  background: #ccc;
+  /*border: 0px solid #333;*/
   cursor: pointer;
-  -webkit-border-radius: 30px;
+  /*-webkit-border-radius: 30px;
   -webkit-background-clip: padding-box;
   -moz-border-radius: 30px;
   -moz-background-clip: padding;
-  border-radius: 30px;
+  border-radius: 30px;*/
   background-clip: padding-box;
   -webkit-opacity: 0.8;
   -moz-opacity: 0.8;
   opacity: 0.8;
-  -webkit-transition: background .5s, opacity .5s;
+  /*-webkit-transition: background .5s, opacity .5s;
   -moz-transition: background .5s, opacity .5s;
   -o-transition: background .5s, opacity .5s;
   -ms-transition: background .5s, opacity .5s;
-  transition: background .5s, opacity .5s;
+  transition: background .5s, opacity .5s;*/
+  -webkit-transition: background 5000ms ease;
+  transition: background 5000ms ease;
 }
 .sequence-pagination li.current {
-  background: #4f8db3;
+  background: #444;
   -webkit-opacity: 1;
   -moz-opacity: 1;
   opacity: 1;
+  -webkit-transition: background 5000ms ease;
+  transition: background 5000ms ease;
 }
 .sequence-next,
 .sequence-prev {
@@ -2224,7 +2231,7 @@ span.color-red {
 .bx-wrapper .bx-pager {
   text-align: center;
   font-size: .85em;
-  font-family: Arial;
+ /* font-family: Arial;*/
   font-weight: bold;
   color: #666;
   padding-top: 20px;
@@ -2326,13 +2333,13 @@ span.color-red {
   position: absolute;
   bottom: 0;
   left: 0;
-  background: #666\9;
+  background: #666;
   background: rgba(80, 80, 80, 0.75);
   width: 100%;
 }
 .bx-wrapper .bx-caption span {
   color: #fff;
-  font-family: Arial;
+  /*font-family: Arial;*/
   display: block;
   font-size: .85em;
   padding: 10px;
@@ -2340,15 +2347,24 @@ span.color-red {
 /*--------------------------------------------------------------------------
 +	Main Menu Style
 --------------------------------------------------------------------------*/
+.top-margin{
+  height: 3em;
+  background: #444;
+}
+
 .mainmenu li.logo-wrapper a {
-  border-right: 1px solid #E8E8E8;
+  /*border-right: 1px solid #E8E8E8;*/
   padding-left: 0;
   padding-top: 0;
   padding-bottom: 0;
 }
+.mainmenu li.logo-wrapper img{
+  width: 30px;
+}
+
 .mainmenu-wrapper {
-  background-color: #FFF;
-  border-bottom: 4px solid #4f8db3;
+  background-color: #2b2b2b;
+  border-bottom: 0;/*4px solid #4f8db3;*/
   z-index: 4;
 }
 .mainmenu {
@@ -2373,21 +2389,21 @@ span.color-red {
 }
 .mainmenu > ul > li > a,
 .mainmenu .mainmenu-submenu-inner > li > a {
-  font-size: 1.2em;
-  padding: 1.2em 1.5em;
-  color: #999;
+  font-size: 1em;
+  padding: .5em 2em;
+  color: #FFF;
   display: inline-block;
   text-decoration: none;
 }
 .mainmenu > ul > li > a:hover,
 .mainmenu .mainmenu-submenu-inner > li > a:hover {
-  color: #4f8db3;
+  color: #999; /*#4f8db3;*/
   text-decoration: none;
 }
 .mainmenu > ul > li.active > a,
 .mainmenu .mainmenu-submenu-inner > li.active > a {
-  color: #4f8db3;
-  font-weight: 600 !important;
+  color: #848484; /*#4f8db3;
+  font-weight: 600 !important;*/
 }
 .mainmenu > ul > li.mainmenu-open a,
 .mainmenu .mainmenu-submenu-inner > li.mainmenu-open a,
