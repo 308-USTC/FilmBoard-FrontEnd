@@ -1,4 +1,5 @@
-l<!DOCTYPE html>
+l
+<!DOCTYPE html>
 <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
 <!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
@@ -22,29 +23,40 @@ l<!DOCTYPE html>
     <link rel="stylesheet" href="css/jqcloud.css">
     <style>
         div.jqcloud span.w10 {
-    color: rgba(216,34,13,1);
-}
-div.jqcloud span.w9 {
-    color: rgb(205, 184, 0);
-}
-div.jqcloud span.w8 {
-    color: rgba(105,14,40,1);
-}
-div.jqcloud span.w5 {
-    color: rgba(216,34,13,1);
-}
-div.jqcloud span.w4 {
-    color: rgba(240,131,0,1);
-}div.jqcloud span.w3 {
-    color: #c54204;
-}div.jqcloud span.w2 {
-    color: #de0000;
-}div.jqcloud span.w1 {
-    color: #aab5f0;
-}div.jqcloud span.w1 {
-    color: #794283;
-}
-
+            color: rgba(216, 34, 13, 1);
+        }
+        
+        div.jqcloud span.w9 {
+            color: rgb(205, 184, 0);
+        }
+        
+        div.jqcloud span.w8 {
+            color: rgba(105, 14, 40, 1);
+        }
+        
+        div.jqcloud span.w5 {
+            color: rgba(216, 34, 13, 1);
+        }
+        
+        div.jqcloud span.w4 {
+            color: rgba(240, 131, 0, 1);
+        }
+        
+        div.jqcloud span.w3 {
+            color: #c54204;
+        }
+        
+        div.jqcloud span.w2 {
+            color: #de0000;
+        }
+        
+        div.jqcloud span.w1 {
+            color: #aab5f0;
+        }
+        
+        div.jqcloud span.w1 {
+            color: #794283;
+        }
     </style>
     <script src="js/modernizr-2.6.2-respond-1.1.0.min.js"></script>
 </head>
@@ -55,13 +67,14 @@ div.jqcloud span.w4 {
         <![endif]-->
     <!-- Navigation & Logo-->
     <div class="mainmenu-wrapper">
+        <div class="top-margin"></div>
         <div class="container">
             <nav id="mainmenu" class="mainmenu">
                 <ul>
                     <li class="logo-wrapper">
-                        <a href="index.html"><img src="img/mPurpose-logo.png" style="width: 50%;" alt="上海大学影视学院大数据中心"></a>
+                        <a href="index.html"><img src="img/logo.png"></a>
                     </li>
-                    <li class="active">
+                    <li>
                         <a href="index.html">主页</a>
                     </li>
                     <li>
@@ -69,6 +82,9 @@ div.jqcloud span.w4 {
                     </li>
                     <li>
                         <a href="features.html">核心技术</a>
+                    </li>
+                    <li>
+                        <a href="about.html">关于我们</a>
                     </li>
                 </ul>
             </nav>
@@ -96,7 +112,9 @@ div.jqcloud span.w4 {
                 <!-- End Product Image & Available Colors -->
                 <!-- Product Summary & Options -->
                 <div class="col-sm-6 product-details">
-                    <h4>总票房：<div class="price">9.71亿</div></h4>
+                    <h4>总票房：
+                        <div class="price">9.71亿</div>
+                    </h4>
                     <h5>剧情简介：</h5>
                     <p>
                         2011年10月5日清晨，两艘中国商船在湄公河金三角流域遇袭，船上13名中国船员全部遇难，并在船上发现90万粒毒品。这宗枪杀十三名中国船员的血腥冤案，掀起了悲剧的序幕。面对矛头指向中国运毒、颠倒是非的舆论，为了还遇难同胞一个清白，中国决定派出缉毒精英，组成此次案件的特别行动小组，以高刚为队长，潜入金三角查明真相，企图揪出案件的幕后黑手。然而缉拿真凶的过程并非他们想得那么简单，事件的进展扑朔迷离，通往真相的道路更是险象环生。
@@ -119,7 +137,8 @@ div.jqcloud span.w4 {
                                 <div id="map_container" style="height: 700px; width: 100%;"></div>
                                 <div id="pie2_container" style="height: 300px; width: 100%;"></div>
                                 <section style="text-align: center;">
-                                    <h2>热词</h2></section>
+                                    <h2>热词</h2>
+                                </section>
                                 <div id="key_words" class="cloud" style="height: 300px; width: 100%;"></div>
                             </div>
                             <!-- Tab Content (Specification) -->
@@ -173,6 +192,7 @@ div.jqcloud span.w4 {
     <div class="footer">
         <div class="container">
             <div class="row">
+                <hr/>
                 <div class="col-footer col-md-3 col-xs-6">
                     <h3>最新报告</h3>
                     <div class="portfolio-item">
@@ -183,33 +203,28 @@ div.jqcloud span.w4 {
                 </div>
                 <div class="col-footer col-md-3 col-xs-6">
                     <h3>站点链接</h3>
-                    <ul class="no-list-style footer-navigate-section">
-                        <li><a href="page-blog-posts.html">大事记</a></li>
-                        <li><a href="page-portfolio-3-columns-2.html">服务/报告</a></li>
-                        <li><a href="page-services-3-columns.html">合作</a></li>
-                        <li><a href="page-pricing.html">招聘</a></li>
-                        <li><a href="page-faq.html">帮助</a></li>
-                    </ul>
+                    <p class="footer-navigate-section">
+                        <a href="#">大事记</a><br/>
+                        <a href="#">服务/报告</a><br/>
+                        <a href="#">合作</a><br/>
+                        <a href="#">招聘</a><br/>
+                        <a href="#">帮助</a><br/>
+                    </p>
                 </div>
+
                 <div class="col-footer col-md-4 col-xs-6">
                     <h3>联系我们</h3>
                     <p class="contact-us-details">
-                        <b>地址:</b> 上海市宝山区上大路99号
-                        <br/>
-                        <b>电话:</b> <a href="http://www.shu.edu.cn/Default.aspx?tabid=8558">电话查询</a>
-                        <br/>
-                        <b>邮编:</b> 200444
-                        <br/>
-                        <b>投稿:</b> yingshitongxunshe@163.com</a>
+                        地址: 上海市宝山区上大路99号<br/> 电话: <a href="http://www.shu.edu.cn/Default.aspx?tabid=8558">电话查询</a><br/> 邮编:
+                        200444
+                        <br/> 投稿: yingshitongxunshe@163.com</a>
                     </p>
                 </div>
                 <div class="col-footer col-md-2 col-xs-6">
                     <h3>在线联系</h3>
-                    <ul class="footer-stay-connected no-list-style">
-                        <li>
-                            <a href="http://weibo.com/shangdayingshi"><img src="img/weibo.png">新浪微博</a>
-                        </li>
-                    </ul>
+                    <p class="footer-stay-connected">
+                        <a href="http://weibo.com/shangdayingshi">新浪微博</a>
+                    </p>
                 </div>
             </div>
             <div class="row">
