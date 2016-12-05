@@ -2324,7 +2324,7 @@ span.color-red {
 --------------------------------------------------------------------------*/
 .top-margin{
   height: 3em;
-  background: #444;
+ /* background: #444;*/
 }
 
 .mainmenu li.logo-wrapper a {
@@ -2334,7 +2334,7 @@ span.color-red {
   padding-bottom: 0;
 }
 .mainmenu li.logo-wrapper img{
-  width: 30px;
+  width: 50%;
 }
 
 .mainmenu-wrapper {
