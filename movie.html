@@ -26,7 +26,7 @@
         .deatil-content .deatil-head,
         .detail-super-title section:first-child,
         .detail-title-index {
-            background-color: rgb(248, 100, 100);
+            background-color: #fff;
         }
         
         .detail-super-title section:last-child,
@@ -82,7 +82,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
-                    <h1>电影榜单 更新时间：<span>2016年12月5日</span></h1>
+                    <h1>电影榜单 更新时间：<span id="updateTime">2016年12月5日</span></h1>
                 </div>
             </div>
         </div>
@@ -90,11 +90,36 @@
     <div class="section">
         <div class="container">
 
-            <div class="deatil-content">
+            <div class="deatil-content oy" id="ctt">
                 <section class="deatil-head">
-                    <p class="center"><img src="img/movie.png"></p>
+                    <p class="center"><img src="img/weekMovie-bg.png"></p>
                     <p class="indent2"></p>
                 </section>
+
+                <section id="baidu"><b>百度<span>电影搜索风云榜</span></b>
+                <div class="chart"></div>
+                </section>
+
+                <section id="tx"><b>腾讯<span>本周电影播放量</span></b>
+                <div class="chart"></div>
+                </section>
+
+
+                <section id="leshi"><b>乐视<span>本周电影播放量</span></b>
+                <div class="chart"></div>
+                </section>
+
+
+                <section id="youku"><b>优酷<span>本周电影播放量</span></b>
+                <div class="chart"></div>
+                </section>
+
+                <!--
+                <section id="aqiyi"><b>爱奇艺<span>本周电影指数</span></b>
+                <div class="chart"></div>
+                </section>
+				-->
+
             </div>
         </div>
     </div>
@@ -107,7 +132,7 @@
                     <h3>最新报告</h3>
                     <div class="portfolio-item">
                         <div class="portfolio-image">
-                            <a href="mghxd.html"><img src="img/mghxd-bg.jpg" alt="《湄公河行动》"></a>
+                            <a href="weekMovie.html"><img src="img/weekMovie-bg.png"></a>
                         </div>
                     </div>
                 </div>
@@ -154,7 +179,7 @@
     <script src="js/template.js"></script>
     <script src="http://cdn.bootcss.com/jqcloud/1.0.4/jqcloud-1.0.4.min.js"></script>
     <script type="text/javascript">
-        //////////////////////////////////////////////////////////////////////////
+
 
         var tenxun = {
             "content": [{
@@ -207,203 +232,7 @@
                     "view": "潘金莲美人计拯救穿越武太郎",
                     "actor": "任鹏  李倩  刘俊华  都钊  ",
                     "number": "806.2万"
-                }, {
-                    "name": "拯救汪星人大作战",
-                    "view": "救狗小队的召唤令",
-                    "actor": "白利卫  杨博潇  赵一霖  ",
-                    "number": "797.7万"
-                }, {
-                    "name": "别墅惊魂",
-                    "view": "别墅惊悚虐恋",
-                    "actor": "洪爽  赵铁英  王飞  ",
-                    "number": "782.9万"
-                }, {
-                    "name": "晚安小妞",
-                    "view": "青春爱情逆袭古惑仔",
-                    "actor": "杨爽  刘霖  赵威  那朵  ",
-                    "number": "777.7万"
-                }, {
-                    "name": "宠灵实验室之狸奴艾莉",
-                    "view": "宅男恋上宠灵猫妖",
-                    "actor": "陈冠良  夏雪姣  张宏博  ",
-                    "number": "737.1万"
-                }, {
-                    "name": "毒舌开场6分钟10：三人行",
-                    "view": "",
-                    "actor": "",
-                    "number": "732.1万"
-                }, {
-                    "name": "BIGBANG MADE",
-                    "view": "给你还原一个最真实的BIGBANG",
-                    "actor": "权志龙  东永裴  姜大声  ",
-                    "number": "698.5万"
-                }, {
-                    "name": "毒爱",
-                    "view": "首部禁毒题材公益电影",
-                    "actor": "范艳  方勇  罗逸辉  ",
-                    "number": "694.1万"
-                }, {
-                    "name": "囧二神探",
-                    "view": "屌丝神探来破案",
-                    "actor": "凌智勇  兰曰明  胡京铭  ",
-                    "number": "676.6万"
-                }, {
-                    "name": "超能联盟",
-                    "view": "逗比四人组意外获得超能力",
-                    "actor": "陈政阳  李炫臻  蔡书雅  ",
-                    "number": "673.1万"
-                }, {
-                    "name": "怒海救援",
-                    "view": "真实海难改编滔天巨浪来袭",
-                    "actor": "克里斯·派恩  ",
-                    "number": "651.8万"
-                }, {
-                    "name": "至尊宝归来I",
-                    "view": "《大话西游》的全新延续",
-                    "actor": "晓龙（至尊宝）  ",
-                    "number": "617.5万"
-                }, {
-                    "name": "魔轮",
-                    "view": "林心如卷入海上恐怖机关",
-                    "actor": "林心如  何润东  金世佳  ",
-                    "number": "610.9万"
-                }, {
-                    "name": "愤怒的同桌",
-                    "view": "妈妈和儿子竟是同班同学？",
-                    "actor": "刘林  马亚楠  于安  ",
-                    "number": "598.2万"
-                }, {
-                    "name": "功夫熊猫3",
-                    "view": "阿宝变神龙！要上天惹~",
-                    "actor": "杰克·布莱克  ",
-                    "number": "593.7万"
-                }, {
-                    "name": "二重身之双重恋人",
-                    "view": "唯美爱情浪漫撩妹攻略",
-                    "actor": "房飞霖  杨旸  毛一飞  ",
-                    "number": "584.7万"
-                }, {
-                    "name": "临界",
-                    "view": "诡异裁缝迎娶女尸上演冥婚",
-                    "actor": "吴志谦  漆子美  ",
-                    "number": "573.1万"
-                }, {
-                    "name": "江湖侠客令之群侠归来",
-                    "view": "隐世高手玩神秘穿越大乱斗",
-                    "actor": "鄢子纶  邱胜翊  黄一飞  ",
-                    "number": "556.7万"
-                }, {
-                    "name": "十二星座男",
-                    "view": "十二美男各出奇招追美女",
-                    "actor": "王晓冬  张扬  林森  陈华  ",
-                    "number": "537.7万"
-                }, {
-                    "name": "特种兵王",
-                    "view": "对手冤家变齐心伙伴",
-                    "actor": "谢孟伟  宋禹  赵育莹  ",
-                    "number": "524.5万"
-                }, {
-                    "name": "道士下山",
-                    "view": "陈凯歌诠释另类武侠",
-                    "actor": "王宝强  元华  林志玲  ",
-                    "number": "468.3万"
-                }, {
-                    "name": "脱轨",
-                    "view": "天衣无缝第借种生子计划",
-                    "actor": "阮晓伟  邹晶晶  ",
-                    "number": "465.5万"
-                }, {
-                    "name": "伦敦陷落",
-                    "view": "猛男保镖伦敦穿越火线",
-                    "actor": "杰拉德·巴特勒  ",
-                    "number": "420.1万"
-                }, {
-                    "name": "深宫遗梦",
-                    "view": "脑洞大开！皇嫂升职记",
-                    "actor": "游千惠  陈泇文  向皓  ",
-                    "number": "338.0万"
-                }, {
-                    "name": "魔怔世界",
-                    "view": "魔兽人物穿越现代都市",
-                    "actor": "关棋语  于芷晴  赵雨菁  ",
-                    "number": "333.0万"
-                }, {
-                    "name": "九度空间",
-                    "view": "悬疑故事猜谜游戏",
-                    "actor": "丁志诚  白纬芬  莫龙丹  ",
-                    "number": "314.3万"
-                }, {
-                    "name": "嫌疑人z不合时宜",
-                    "view": "迷失自我的复仇故事",
-                    "actor": "闫鹏  张小溪  原子霏  ",
-                    "number": "309.7万"
-                }, {
-                    "name": "玲安对话好莱坞15：名导林诣彬揭秘星际迷航3",
-                    "view": "名导林诣彬揭秘星际迷航3",
-                    "actor": "",
-                    "number": "295.1万"
-                }, {
-                    "name": "超能太监",
-                    "view": "超能力太监寻根生子历险记",
-                    "actor": "高成龙  彭禺厶  刘宇珽  ",
-                    "number": "293.8万"
-                }, {
-                    "name": "宫锁沉香",
-                    "view": "《宫》电影版",
-                    "actor": "周冬雨  陈晓  赵丽颖  ",
-                    "number": "287.8万"
-                }, {
-                    "name": "阴阳手眼",
-                    "view": "美女大战厉鬼",
-                    "actor": "李达  张振江  姜倩  ",
-                    "number": "272.7万"
-                }, {
-                    "name": "熊出没之熊心归来",
-                    "view": "熊大熊二开启马戏团历险",
-                    "actor": "",
-                    "number": "265.9万"
-                }, {
-                    "name": "绑架2",
-                    "view": "绑架闹剧阴差阳错",
-                    "actor": "赵依娜  刘裕龙  赵小七  ",
-                    "number": "264.9万"
-                }, {
-                    "name": "惊天盗梦团",
-                    "view": "盗梦游戏惊悚开演",
-                    "actor": "于久洲  王格格  杨卿俪  ",
-                    "number": "258.7万"
-                }, {
-                    "name": "培根唠电影26：封神传奇",
-                    "view": "范爷另觅新欢变身妖媚妲己",
-                    "actor": "",
-                    "number": "257.9万"
-                }, {
-                    "name": "绝命追凶",
-                    "view": "惊险追踪幕后黑手",
-                    "actor": "刘振安  宁海  刘芯榕  ",
-                    "number": "246.7万"
-                }, {
-                    "name": "鸡皮疙瘩",
-                    "view": "升级版“博物馆奇妙夜”",
-                    "actor": "杰克·布莱克  ",
-                    "number": "233.7万"
-                }, {
-                    "name": "玲安对话好莱坞14：极限特工领教甄功夫",
-                    "view": "极限特工领教甄功夫",
-                    "actor": "",
-                    "number": "230.5万"
-                }, {
-                    "name": "熊出没之雪岭熊风",
-                    "view": "吾家有熊初长成",
-                    "actor": "",
-                    "number": "220.2万"
-                }, {
-                    "name": "柏拉图日记",
-                    "view": "两个不靠谱青年在快餐情感寻找真爱",
-                    "actor": "天宸  曹魏  竹君  张贺  ",
-                    "number": "215.1万"
-                },
-
+                }, 
             ]
         };
 
@@ -438,609 +267,184 @@
             }, {
                 "name": "夏有乔木 雅望天堂",
                 "number": "106.2612万"
-            }, {
-                "name": "使徒行者",
-                "number": "102.4013万"
-            }, {
-                "name": "发条城市",
-                "number": "101.4676万"
-            }, {
-                "name": "熊出没之雪岭熊风",
-                "number": "89.5441万"
-            }, {
-                "name": "二次曝光",
-                "number": "86.2509万"
-            }, {
-                "name": "陆垚知马俐",
-                "number": "84.4804万"
-            }, {
-                "name": "哆啦A梦：新·大雄的日本诞生",
-                "number": "83.9775万"
-            }, {
-                "name": "大鱼海棠",
-                "number": "81.6572万"
-            }, {
-                "name": "奇幻森林",
-                "number": "81.0377万"
-            }, {
-                "name": "金陵十三钗",
-                "number": "80.2735万"
-            }, {
-                "name": "整垮前女友有限责任公司 综艺",
-                "number": "69.5028万"
-            }, {
-                "name": "在世界中心呼唤爱",
-                "number": "67.713万"
-            }, {
-                "name": "谍影重重5 英语版",
-                "number": "67.2516万"
-            }, {
-                "name": "叶问3",
-                "number": "67.0099万"
-            }, {
-                "name": "机械师 英语版",
-                "number": "65.2864万"
-            }, {
-                "name": "夜孔雀",
-                "number": "64.3802万"
-            }, {
-                "name": "机械师2：复活 英语版",
-                "number": "62.903万"
-            }, {
-                "name": "僵尸先生",
-                "number": "61.3967万"
-            }, {
-                "name": "来电",
-                "number": "60.8648万"
-            }, {
-                "name": "熊出没之熊心归来",
-                "number": "59.5878万"
-            }, {
-                "name": "赤道",
-                "number": "59.3323万"
-            }, {
-                "name": "九层妖塔",
-                "number": "58.2341万"
-            }, {
-                "name": "分手合约",
-                "number": "53.3741万"
-            }, {
-                "name": "爱宠大机密",
-                "number": "53.138万"
-            }, {
-                "name": "封神传奇",
-                "number": "49.1591万"
-            }, {
-                "name": "绝地逃亡",
-                "number": "48.1772万"
-            }, {
-                "name": "精武风云·陈真",
-                "number": "47.7044万"
-            }, {
-                "name": "龙的传人",
-                "number": "47.5919万"
-            }, {
-                "name": "灵幻先生",
-                "number": "47.2398万"
-            }, {
-                "name": "暗杀游戏",
-                "number": "45.7788万"
-            }, {
-                "name": "快手枪手快枪手",
-                "number": "44.0515万"
-            }, {
-                "name": "龙珠Z：复活的弗利萨",
-                "number": "43.8493万"
-            }, {
-                "name": "十二生肖",
-                "number": "40.9579万"
-            }, {
-                "name": "勇敢的心",
-                "number": "40.1071万"
-            }, {
-                "name": "新大头儿子和小头爸爸2一日成才",
-                "number": "40.0263万"
-            }, {
-                "name": "独立之日",
-                "number": "39.7162万"
-            }, {
-                "name": "警察故事3超级警察 国语",
-                "number": "39.1943万"
-            }, {
-                "name": "太平轮·彼岸",
-                "number": "39.1068万"
-            }, {
-                "name": "睡在我上铺的兄弟",
-                "number": "38.7901万"
-            }, {
-                "name": "杀破狼2",
-                "number": "38.3076万"
-            }, {
-                "name": "危城",
-                "number": "38.1367万"
-            }]
-        };
+            }]};
 
         var youku = {
-            "content": [{
-                "name": "仙侠学院",
-                "number": "16948万"
-            }, {
-                "name": "夏有乔木 雅望天堂",
-                "number": "4919万"
-            }, {
-                "name": "惊天破",
-                "number": "715万"
-            }, {
-                "name": "使徒行者",
-                "number": "8126万"
-            }, {
-                "name": "从你的全世界路过",
-                "number": "2208万"
-            }, {
-                "name": "有部电影",
-                "number": "5234万"
-            }, {
-                "name": "哆啦A梦:新·大雄的日本诞生",
-                "number": "977万"
-            }, {
-                "name": "发条城市",
-                "number": "1654万"
-            }, {
-                "name": "谁的青春不迷茫",
-                "number": "4899万"
-            }, {
-                "name": "星映话 2016",
-                "number": "11202万"
-            }, {
-                "name": "巴霍巴利王:开端",
-                "number": "4121万"
-            }, {
-                "name": "我最好朋友的婚礼",
-                "number": "2024万"
-            }, {
-                "name": "致青春:原来你还在这里",
-                "number": "8482万"
-            }, {
-                "name": "机械师2:复活",
-                "number": "1550万"
-            }, {
-                "name": "美人鱼",
-                "number": "28392万"
-            }, {
-                "name": "江湖水",
-                "number": "514万"
-            }, {
-                "name": "西游记之孙悟空三打白骨精",
-                "number": "18150万"
-            }, {
-                "name": "在世界中心呼唤爱",
-                "number": "298万"
-            }, {
-                "name": "大鱼海棠",
-                "number": "2696万"
-            }, {
-                "name": "我的特工爷爷",
-                "number": "9566万"
-            }, {
-                "name": "鲨滩",
-                "number": "951万"
-            }, {
-                "name": "我来也大破祭酒党",
-                "number": "382万"
-            }, {
-                "name": "我来也",
-                "number": "1092万"
-            }, {
-                "name": "叶问3",
-                "number": "23148万"
-            }, {
-                "name": "火锅英雄",
-                "number": "7758万"
-            }, {
-                "name": "捉迷藏",
-                "number": "339万"
-            }, {
-                "name": "凌辰看电影",
-                "number": "2831万"
-            }, {
-                "name": "最后的巫师猎人",
-                "number": "8238万"
-            }, {
-                "name": "唐人街探案",
-                "number": "18161万"
-            }, {
-                "name": "万万没想到",
-                "number": "24176万"
-            }, ]
-        };
+            "content": [{"name":"湄公河行动","number":"1941万"},
+{"name":"寒战2","number":"6803万"},
+{"name":"仙侠学院","number":"18750万"},
+{"name":"使徒行者","number":"9680万"},
+{"name":"驴得水","number":"1505万"},
+{"name":"外公芳龄38","number":"510万"},
+{"name":"圆梦巨人","number":"519万"},
+{"name":"有部电影","number":"5600万"},
+{"name":"夏有乔木 雅望天堂","number":"5810万"},
+{"name":"北京遇上西雅图之不二情书","number":"4472万"}]};
 
-        var aqiyi = {
-            content: [{
-                "type": [
-                    "喜剧",
-                    "爱情"
-                ],
-                "name": "从你的全世界路过",
-                "week_index": "45317582"
-            }, {
-                "type": [
-                    "动作",
-                    "犯罪"
-                ],
-                "name": "机械师2：复活",
-                "week_index": "34722726"
-            }, {
-                "type": [
-                    "悬疑",
-                    "动作",
-                    "犯罪"
-                ],
-                "name": "惊天破",
-                "week_index": "25965030"
-            }, {
-                "type": [
-                    "悬疑",
-                    "动作",
-                    "犯罪"
-                ],
-                "name": "使徒行者",
-                "week_index": "19557715"
-            }, {
-                "type": [
-                    "悬疑"
-                ],
-                "name": "老九门番外之四屠黄葵",
-                "week_index": "9161771"
-            }, {
-                "type": [
-                    "动作",
-                    "喜剧",
-                    "枪战"
-                ],
-                "name": "辣警霸王花",
-                "week_index": "8877531"
-            }, {
-                "type": [
-                    "西部",
-                    "枪战"
-                ],
-                "name": "终极硬汉",
-                "week_index": "8722025"
-            }, {
-                "type": [
-                    "悬疑",
-                    "惊悚",
-                    "犯罪"
-                ],
-                "name": "捉迷藏",
-                "week_index": "5383842"
-            }, {
-                "type": [
-                    "动作",
-                    "犯罪"
-                ],
-                "name": "赌王2016",
-                "week_index": "5195351"
-            }, {
-                "type": [
-                    "青春",
-                    "动作",
-                    "喜剧"
-                ],
-                "name": "龙拳小子",
-                "week_index": "4770929"
-            }, {
-                "type": [
-                    "动作",
-                    "网络大电影"
-                ],
-                "name": "澳门往事之猛虎过江",
-                "week_index": "4641991"
-            }, {
-                "type": [
-                    "喜剧",
-                    "动画",
-                    "剧情"
-                ],
-                "name": "熊出没之夺宝熊兵",
-                "week_index": "3873270"
-            }, {
-                "type": [
-                    "动作",
-                    "喜剧",
-                    "剧情"
-                ],
-                "name": "夺路而逃",
-                "week_index": "3862596"
-            }, {
-                "type": [
-                    "惊悚",
-                    "剧情",
-                    "冒险"
-                ],
-                "name": "鲨滩",
-                "week_index": "3653769"
-            }, {
-                "type": [
-                    "恐怖",
-                    "惊悚",
-                    "剧情"
-                ],
-                "name": "聊斋新编之画皮新娘",
-                "week_index": "3473227"
-            }, {
-                "type": [
-                    "剧情",
-                    "冒险"
-                ],
-                "name": "超级保镖",
-                "week_index": "3374187"
-            }, {
-                "type": [
-                    "青春",
-                    "剧情",
-                    "家庭"
-                ],
-                "name": "致青春：原来你还在这里",
-                "week_index": "2959690"
-            }, {
-                "type": [
-                    "喜剧",
-                    "剧情",
-                    "爱情"
-                ],
-                "name": "我最好朋友的婚礼",
-                "week_index": "2795839"
-            }, {
-                "type": [
-                    "青春",
-                    "家庭",
-                    "爱情"
-                ],
-                "name": "谁的青春不迷茫",
-                "week_index": "2228356"
-            }, {
-                "type": [
-                    "青春",
-                    "剧情",
-                    "家庭"
-                ],
-                "name": "七月与安生",
-                "week_index": "2192398"
-            }, {
-                "type": [
-                    "青春",
-                    "喜剧",
-                    "爱情"
-                ],
-                "name": "夏洛特烦恼",
-                "week_index": "2169391"
-            }, {
-                "type": [
-                    "喜剧",
-                    "剧情",
-                    "爱情"
-                ],
-                "name": "神笔马娘",
-                "week_index": "2143790"
-            }, {
-                "type": [
-                    "喜剧",
-                    "家庭",
-                    "儿童"
-                ],
-                "name": "小明和他的小伙伴们",
-                "week_index": "2129191"
-            }, {
-                "type": [
-                    "动画",
-                    "儿童"
-                ],
-                "name": "龙珠Z：复活的弗利萨",
-                "week_index": "2096554"
-            }, {
-                "type": [
-                    "冒险",
-                    "枪战"
-                ],
-                "name": "王牌逗王牌",
-                "week_index": "1896247"
-            }, {
-                "type": [
-                    "喜剧",
-                    "剧情",
-                    "家庭"
-                ],
-                "name": "非常父子档",
-                "week_index": "1796431"
-            }, {
-                "type": [
-                    "动作",
-                    "战争",
-                    "剧情"
-                ],
-                "name": "战狼",
-                "week_index": "1774271"
-            }, {
-                "type": [
-                    "悬疑",
-                    "犯罪",
-                    "剧情"
-                ],
-                "name": "老九门番外之恒河杀树",
-                "week_index": "1766726"
-            }, {
-                "type": [
-                    "惊悚",
-                    "剧情",
-                    "科幻"
-                ],
-                "name": "暗杀游戏",
-                "week_index": "1661432"
-            }, {
-                "type": [
-                    "喜剧",
-                    "动作",
-                    "犯罪"
-                ],
-                "name": "澳门风云3",
-                "week_index": "1599362"
-            }, {
-                "type": [
-                    "喜剧",
-                    "科幻",
-                    "爱情"
-                ],
-                "name": "美人鱼",
-                "week_index": "1580014"
-            }, {
-                "type": [
-                    "喜剧",
-                    "剧情",
-                    "冒险"
-                ],
-                "name": "鲁滨逊漂流记（国语）",
-                "week_index": "1565412"
-            }, {
-                "type": [
-                    "家庭",
-                    "儿童"
-                ],
-                "name": "哆啦A梦：新·大雄的日本诞生",
-                "week_index": "1517427"
-            }, {
-                "type": [
-                    "剧情",
-                    "家庭",
-                    "爱情"
-                ],
-                "name": "再见，在也不见",
-                "week_index": "1497295"
-            }, {
-                "type": [
-                    "青春",
-                    "剧情",
-                    "爱情"
-                ],
-                "name": "夏有乔木雅望天堂",
-                "week_index": "1243940"
-            }, {
-                "type": [
-                    "网络大电影",
-                    "冒险"
-                ],
-                "name": "四平青年之浩哥大战古惑仔",
-                "week_index": "1237674"
-            }, {
-                "type": [
-                    "动作",
-                    "惊悚",
-                    "犯罪"
-                ],
-                "name": "特殊身份",
-                "week_index": "1185257"
-            }, {
-                "type": [
-                    "动作",
-                    "犯罪"
-                ],
-                "name": "机械师2：复活（国语）",
-                "week_index": "1170938"
-            }, {
-                "type": [
-                    "动作",
-                    "枪战"
-                ],
-                "name": "快手枪手快枪手",
-                "week_index": "1166883"
-            }, {
-                "type": [
-                    "史诗",
-                    "歌舞",
-                    "冒险"
-                ],
-                "name": "巴霍巴利王：开端",
-                "week_index": "1137773"
-            }, {
-                "type": [
-                    "网络大电影",
-                    "剧情"
-                ],
-                "name": "老九门番外之二月花开",
-                "week_index": "1036027"
-            }, {
-                "type": [
-                    "青春",
-                    "冒险",
-                    "魔幻"
-                ],
-                "name": "哈利·波特1：哈利·波特与魔法石",
-                "week_index": "1022140"
-            }, {
-                "type": [
-                    "喜剧",
-                    "爱情"
-                ],
-                "name": "骗爱天团",
-                "week_index": "952619"
-            }, {
-                "type": [
-                    "青春",
-                    "剧情",
-                    "爱情"
-                ],
-                "name": "微微一笑很倾城",
-                "week_index": "825395"
-            }, {
-                "type": [
-                    "冒险",
-                    "魔幻",
-                    "奇幻"
-                ],
-                "name": "哈利·波特4：哈利·波特与火焰杯",
-                "week_index": "810831"
-            }, {
-                "type": [
-                    "喜剧",
-                    "家庭",
-                    "儿童"
-                ],
-                "name": "新大头儿子和小头爸爸2一日成才",
-                "week_index": "755902"
-            }, {
-                "type": [
-                    "动作",
-                    "魔幻"
-                ],
-                "name": "西游记之孙悟空三打白骨精",
-                "week_index": "751091"
-            }, {
-                "type": [
-                    "动作",
-                    "喜剧",
-                    "家庭"
-                ],
-                "name": "我的特工爷爷",
-                "week_index": "731531"
-            }, {
-                "type": [
-                    "青春",
-                    "剧情",
-                    "爱情"
-                ],
-                "name": "在世界中心呼唤爱",
-                "week_index": "701000"
-            }, {
-                "type": [
-                    "悬疑",
-                    "动作",
-                    "犯罪"
-                ],
-                "name": "冰河追凶",
-                "week_index": "695215"
-            }]
-        };
+
+ var aqiyi = {};
+
+var baidu = {"content":[
+{"name":"长城","number":"97884","value":"电影《长城》讲述了在古代，一支中国精英部队为保卫人类，在举世闻名的长城上与怪兽饕餮进行生死决战的故事。欧洲雇佣军威廉（马特·达蒙 Matt Damon 饰）与同伴佩罗·托瓦尔（佩德罗·帕斯卡 Pedro Pascal 饰）不远万里来到中国盗取火药配方，意外发现了长城是为抵御60年降临人间一次的饕餮所建。长城内部机关重重，宛如“陆上航母”，由无影禁军世代镇守。在这里，威廉见识了饕餮的凶残，也见证了无影禁军的精锐和勇敢，并被这群战士之间的信任和牺牲所感动，义无反顾地加入到了共同守护人类的战斗当中。"},
+{"name":"血战钢锯岭","number":"64360","value":"1945年，第二次世界大战接近尾声，作为邪恶轴心重要成员的日本，其嚣张态势已成强弩之末。是年，决定战局走向的冲绳岛战役拉开序幕，成千上万斗志昂扬的美国大兵被派往冲绳，等待他们的则是敌军重兵防守、凶险异常的钢锯岭。在这群人中间，却有一个不愿拿起武器的军医。他名叫戴斯蒙德·道斯（安德鲁·加菲尔德 Andrew Garfield 饰），来自美国的弗吉尼亚。太平洋爆发之际，瘦弱的戴斯蒙德志愿成为救死扶伤的军医而应征入伍。可因童年和家庭的原因，他始终不愿拿起枪支操练，为此宁愿背上拒服兵役的罪名被送上军事法庭。几经周折，戴斯蒙德最终和战友来到了钢锯岭。枪林弹雨，转瞬之间无数人应声倒地。在信仰和信念的支持下，戴斯蒙德仅凭一己之力拯救了数十条濒死的生命……本片根据真人真事改编。"},
+{"name":"你的名字","number":"49094","value":"在远离大都会的小山村，住着巫女世家出身的高中女孩宫水三叶（上白石萌音 配音）。校园和家庭的原因本就让她充满烦恼，而近一段时间发生的奇怪事件，又让三叶摸不清头脑。不知从何时起，三叶在梦中就会变成一个住在东京的高中男孩。那里有陌生的同学和朋友，有亲切的前辈和繁华的街道，一切都是如此诱人而真实。另一方面，住在东京的高中男孩立花泷（神木隆之介 配音）则总在梦里来到陌生的小山村，以女孩子的身份过着全新的生活。许是受那颗神秘彗星的影响，立花和三叶在梦中交换了身份。他们以他者的角度体验着对方的人生，这期间有愤怒、有欢笑也有暖心。只是两人并不知道，身份交换的背后隐藏着重大而锥心的秘密……本片为2016年度日本本土影片票房冠军。"},
+{"name":"湄公河行动","number":"43228","value":"金三角湄公河上，一处被称为“鬼门关”的河段，两艘来自中国的商船遭到不明身份之人的枪击袭击。未过多久，泰国军方召开新闻发布会，指责中国商船贩卖毒品。虽然发布会宣称船员全部逃亡，但是十三具遭受残忍杀害的中国船员尸体很快被人发现。这起胆大妄为的案件令中国警方大为震惊，云南省缉毒总队队长高刚（张涵予 饰）受命带特别行动小组前往泰国，并与情报员方新武（彭于晏 饰）合作接洽。根据现有资料显示，这件案子由盘踞在金三角的大毒枭糯卡所为。糯卡贪婪残忍，胆大包天，是湄公河流域上一颗惊扰运输安全的毒瘤。为了将这个恶棍绳之于法，中国、老挝、缅甸开展了三国联合巡逻，集中对糯卡的制毒窝点进行扫荡。而高刚等人也深入最危险境地，与丧失人性的贩毒分子进行惨烈对决……本片根据真实事件改编。"},
+{"name":"生门","number":"29679","value":"中南医院妇产科，形形色色的故事上演从没有停过，5万块钱能救一大两小三条人命，手里只有5千元的丈夫，借钱、贷款、抵押房产此时都行不通，“拯救小凤之女”变得不可能完成；李家福——“拆弹部队”首领，面对夏锦菊保住子宫的请求，露出艰难而犹豫的眼神。心脏两次停跳，换血2万毫升，他如何剪断“炸弹”上的红蓝线，她又能否在“鬼门关”前转身？命悬一线之际，“生死时速”让人目不转睛。年轻妈妈李双双腹中的胎儿，引产似乎已被当地优生科判定，李家福团队却提出实施刨宫产，抢救微弱的性命。救，可能倾家荡产，一生背负沉重的负担；不救，可自己的骨肉，如何走上内心的审判厅。年轻的爸爸该如何踏上这段产房的“釜山行”。"},
+{"name":"罗曼蒂克消亡史","number":"29409","value":"他一直拖到一九四九年五月初才坐上去香港的轮船，算得上真正的末班车。没有人知道他在拖什么或等待什么，我想他自己也未必知道，不过是下意识的拖延。不久他就死在香港，死前再没有值得记述的事件或说过的话，他基本没再说话，这没什么可奇怪的，一切都不值一提，他终于走向自己的沉默。上世纪30年代的上海，叱咤风云的帮派大佬，不甘寂寞的交际花，说着地道上海话的日本妹夫，只收交通费的杀手，被冷落却忠诚的姨太太，外表光鲜的电影皇后，深宅大院里深不可测的管家，偶尔偷腥的电影皇帝，荷尔蒙满溢大脑的帮派小弟，一心想要破处的处男，善良的妓女，随波逐流的明星丈夫，投靠日本人的帮派二哥，日理万机却抽空恋爱的戴先生。战争之下，繁华落尽。帮派大佬逃亡香港，交际花不知所踪，日本妹夫死在上海，电影皇后被丈夫抛弃，处男遇上妓女，姨太太杀死二哥。战争惨烈，战争终于结束。他轻易选择沉默，因为伤口..."},
+{"name":"驴得水","number":"26942","value":"一群“品行不端”却怀揣教育梦想的大学教师，从大城市来到偏远乡村开办了一所小学校。学校待遇惨淡、生活艰苦，但老师们都自得其乐，每天嘻嘻哈哈打成一片。然而教育部特派员要来突击检查的消息打破了安宁，因为学校有一位“驴得水老师”隐藏着不可告人的秘密。就在所有人都担心丑事即将败露的时候，一个神奇天才的出现拯救了大家，然而谁能料到真正的麻烦才刚刚开始……"},
+{"name":"爸爸的3次婚礼","number":"15179","value":"顾史和钱小琼是一对大学恋人，在校期间火速恋爱同居，可年纪尚轻的两人意外不断，误会频频，终于在一次“致命”误会后，钱小琼远赴澳洲……6年后，小琼有了儿子小天，顾史有了女友，这对旧情人在闺蜜的婚礼上意外重逢，让衣食无忧却独缺父爱的小天对顾史产生了极大的好奇心，人小鬼大的小天一路开启神助攻模式，一场花样百出的爆笑“亲”喜剧即将上演……"},
+{"name":"从你的全世界路过","number":"14099","value":"陈末（邓超 饰）被称为全城最贱，每天和王牌DJ小容（杜鹃 饰）针锋相对，谁也不知道他们的仇恨从何而来。陈末的两个兄弟，分别是全城最傻的猪头（岳云鹏 饰），全城最纯的茅十八（杨洋 饰），三人每天横冲直撞，以为可以自在生活，结果都面临人生最大的转折点。陈末相遇了最神秘的幺鸡（张天爱 饰），猪头打造了最惨烈的婚礼，茅十八经历了最悲伤的别离，这群人的生活一点点崩塌，往事一点点揭开。梦想，爱情，友情都离陈末远去。一个失去所有的人，已经弄丢自己的路，直到听到来自全世界的一段语音……"},
+{"name":"摆渡人","number":"14010","value":"摆渡人是城市里的超级英雄，摆渡就是把人从痛苦中解救出来。用快乐和温暖，抵抗这个世界的悲伤。酒吧老板陈末（梁朝伟 饰）和合伙人管春（金城武 饰）就是这座城市的“金牌摆渡人”，他们平时看起来吊儿郎当，却从不对每位需要帮助的人说拒绝，只要你“预约摆渡”，刀山火海都会“使命必达”。邻居女孩小玉（杨颖 饰）为了偶像马力（陈奕迅 饰），预约了他们的服务，但在帮助小玉挑战整个城市的过程中，陈末和管春也逐渐发现了自己躲不过的问题。从欢天喜地的生活，到惊天动地的疯狂，摆渡人最辉煌的篇章，从这里开启。"},
+]};
+
+//////////////////////////////////
+var ctt = $('#ctt');
+$('#updateTime').html('2016年12月20日');
+//////////////////////////////////
+// build a color map as your need.
+var colorList = [
+    '#C1232B', '#B5C334', '#FCCE10', '#E87C25', '#27727B',
+    '#FE8463', '#9BCA63', '#FAD860', '#F3A43B', '#60C0DD',
+    '#D7504B', '#C6E579', '#F4E001', '#F0805A', '#26C0C0'
+];
+     
+var value = [];
+
+var rt =[];
+
+for(var i = 0; i < tenxun.content.length; ++i){
+	rt.push(tenxun.content[i].name);
+	value.push( parseFloat(tenxun.content[i].number) );
+}
+
+
+var ls_option = {
+    textStyle: {fontWeight: 'bold'},
+    grid:{left: 150},
+    tooltip : {
+    	trigger: 'axis',
+        axisPointer : {            // 坐标轴指示器，坐标轴触发有效
+            type : 'shadow'        // 默认为直线，可选为：'line' | 'shadow'
+        },
+        formatter: function(params, ticket, callback){ //自定义提示框内容格式
+        	console.log(params);
+        	return params[0].dataIndex + 1 + "." + params[0].name + '<br/><span style="display:inline-block;margin-right:5px;border-radius:10px;width:9px;height:9px;background-color:'+ colorList[params[0].dataIndex] +'"></span>' + params[0].seriesName + " " + params[0].value +'万' ;
+        }
+    },
+    yAxis : [{
+    	type : 'category',
+    	name: '单位：万',
+    	nameLocation: 'start',
+        nameGap: 16,
+        axisLine: {show: false, lineStyle: {color: '#000'}},
+        axisTick: {show: false, lineStyle: {color: '#000'}},
+    	axisLabel: {
+    		formatter: function(value, index){
+    			return index+1 + ': ' + value;
+    		}
+    	},
+    	inverse: true,
+    	data : rt
+    }],
+    xAxis : [
+    {   
+    	type: 'value',
+        scale: true,
+        position: 'top',
+        boundaryGap: false,
+        splitLine: {show: false},
+        axisLine: {show: false},
+        axisTick: {show: false},
+        axisLabel: {margin: 2, textStyle: {color: '#000'}},
+    }],
+
+    series : [
+        {
+        	name:'',
+        	type:'bar',
+        	label: {
+        		normal: {
+        			show: true,
+        			position: 'right',
+        		},
+        	},
+        	data: value,
+
+        }
+        ]
+
+    };    
+
+////////////////////////////////////////////////////////
+
+var tx =echarts.init($('#tx div')[0]);
+tx.setOption(ls_option,true);
+
+tx.setOption({
+	grid:{left: 100},
+	color: [colorList[10]],
+	yAxis:[{data:rt}],
+	series:[{data:value}]
+});
+
+/////////////////////////////////////////////////////////////////////////////////////
+
+for(var i = 0, rt=[], value=[]; i<leshi.content.length; ++i){
+	rt.push(leshi.content[i].name);
+	value.push( parseFloat(leshi.content[i].number) );
+}
+
+var ls = echarts.init($('#leshi div')[0]);
+ls.setOption(ls_option,true);
+ls.setOption({
+	grid:{left: 150},
+	color: [colorList[2]],
+	yAxis:[{data:rt}],
+	series:[{data:value}]
+});
+
+/////////////////////////////////////////////////////////////////
+
+for(var i = 0, rt=[], value=[]; i<youku.content.length; ++i){
+	rt.push(youku.content[i].name);
+	value.push( parseInt(youku.content[i].number) );
+}
+
+var youku = echarts.init($('#youku div')[0])
+youku.setOption(ls_option,true);
+
+youku.setOption({
+	grid:{left: 200},
+	color: ['#26C0C0'],
+	yAxis:[{data:rt}],
+	series:[{data:value}]
+});
+
+
+///////////////////////////////////////////////
+
+for(var i = 0, rt=[], value=[], bd = baidu.content; i< bd.length; ++i){
+	rt.push(bd[i].name);
+	value.push( parseInt(bd[i].number) );
+}
+var baidu =echarts.init($('#baidu div')[0]);
+baidu.setOption(ls_option,true);
+
+baidu.setOption({
+	tooltip:{formatter:function(params){ //若要添加简介等文字，则需要将变量数组放在次函数内
+        return params[0].dataIndex + 1 + "." + params[0].name + '<br/><span style="display:inline-block;margin-right:5px;border-radius:10px;width:9px;height:9px;background-color:'+ colorList[params[0].dataIndex] +'"></span> 搜索指数：' + params[0].value +'<br/> <img src="img/pic/movie'+ (parseInt(params[0].dataIndex)+1) +'.jpg"> <br/>';
+	}},
+	grid:{left: 150},
+	color: [colorList[0]],
+	yAxis:[{data:rt,name:''}],
+	itemStyle:{normal:{
+		color: colorList[3]
+	}},
+	series:[{data:value}]
+});
+
+//////////////////////////////////////////////////////////////////////////*/
+
 
 
         function playNum(data, status) {
@@ -1105,7 +509,8 @@
 
 
         $(function() {
-            playNum_tx(tenxun, {
+        	
+            /*playNum_tx(tenxun, {
                 plantform: '腾讯',
                 type: '电影',
                 count: 10
@@ -1122,9 +527,8 @@
             });
             playIndex(aqiyi, {
                 plantform: '爱奇艺',
-                type: '电影',
-                count: 10
-            });
+                type: '电影'
+            });*/
 
             /*
                         $.get("./json/json.php?movie.json", function(data, status) {
@@ -1147,6 +551,7 @@
                         });
             */
         });
+
     </script>
 </body>
 

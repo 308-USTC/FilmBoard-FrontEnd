@@ -9,7 +9,7 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>上海电影特效工程技术研究中心大数据实验室 - Q2季报网剧篇</title>
+    <title>上海电影特效工程技术研究中心大数据实验室 - 网剧篇</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width">
     <link rel="stylesheet" href="css/bootstrap.min.css">
@@ -63,7 +63,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
-                    <h1>网剧榜单  更新时间：<span>2016年12月5日</span></h1>
+                    <h1>网剧榜单  更新时间：<span>2016年12月20日</span></h1>
                 </div>
             </div>
         </div>
@@ -73,7 +73,7 @@
 
             <div class="deatil-content">
                 <section class="deatil-head">
-                    <p class="center"><img src="img/nettv.png"></p>
+                    <p class="center"><img src="img/weekNettv.png"></p>
                     <p class="indent2"></p>
                 </section>
             </div>
@@ -88,7 +88,7 @@
                     <h3>最新报告</h3>
                     <div class="portfolio-item">
                         <div class="portfolio-image">
-                            <a href="mghxd.html"><img src="img/mghxd-bg.jpg" alt="《湄公河行动》"></a>
+                            <a href="weekMovie.html"><img src="img/weekMovie-bg.jpg"></a>
                         </div>
                     </div>
                 </div>
@@ -137,74 +137,83 @@
     <script type="text/javascript">
 
     //////////////////////////////////////////////////////////////////////////
-    var word_list_1 = [{
-        text: "余罪",
-        weight: 13
-    }, {
-        text: "刘星",
-        weight: 10.5
-    }, {
-        text: "家有儿女",
-        weight: 9.4
-    }, {
-        text: "痞帅",
-        weight: 8
-    }, {
-        text: "痞气",
-        weight: 6.2
-    }, {
-        text: "痞子",
-        weight: 5
-    }, {
-        text: "贱人余",
-        weight: 5
-    }, {
-        text: "演技爆棚",
-        weight: 5
-    }, {
-        text: "张一山成功转型",
-        weight: 5
-    }, {
-        text: "余儿",
-        weight: 4
-    }, {
-        text: "演技好",
-        weight: 4
-    }, {
-        text: "童星",
-        weight: 3
-    }, {
-        text: "余罪好看",
-        weight: 3
-    }, {
-        text: "好帅",
-        weight: 3
-    }, {
-        text: "心疼余罪",
-        weight: 3
-    }, {
-        text: "可爱混混",
-        weight: 3
-    }, {
-        text: "小鲜肉",
-        weight: 3
-    }, {
-        text: "支持",
-        weight: 3
-    }, {
-        text: "很火",
-        weight: 3
-    }, {
-        text: "根本停不下来",
-        weight: 3
-    }, {
-        text: "演技太棒",
-        weight: 3
-    }, ];
+
+    var tx = {"content":[
+{"name":"九州天空城","view":"张若昀关晓彤演绎凄美虐恋","tags":" VIP 古装 偶像 奇幻","director":"杨磊","actor":"张若昀  关晓彤  刘畅  ","number":"27846.2万"},
+{"name":"青云志","view":"李易峰赵丽颖杨紫梦回诛仙","tags":" 奇幻 武侠 古装","director":"朱锐斌","actor":"李易峰  赵丽颖  杨紫  ","number":"25651.4万"},
+{"name":"超能姐姐大作战","view":"女神赵奕欢狂虐弱比弟弟","tags":" VIP 爱情 喜剧","director":"宋媚","actor":"瓜尔佳泽  赵奕欢  ","number":"8001.1万"},
+{"name":"一起同过窗","view":"鲜肉小花演绎校园纯爱","tags":" VIP 青春 偶像 爱情","director":"毕鑫业","actor":"武雨泽  徐晓璐  庞瀚辰  ","number":"3181.1万"},
+{"name":"情谜睡美人之欲望姐妹","view":"凌潇肃李彩桦再联手","tags":" 剧情 情感","director":"高先明","actor":"凌潇肃  李彩桦  江祖平  ","number":"1240.1万"},
+{"name":"Wuli少年啊之超星星特辑","view":"《超星星学园》幕后花絮","tags":" 偶像 喜剧 青春","director":"无","actor":"彭楚粤  伍嘉成  白澍  ","number":"849.3万"},
+]};
+
+var youku = {content:
+    [{"name":"极品家丁 弹幕版","number":"126874万"},
+{"name":"欢喜密探","number":"254708万"},
+{"name":"藏地密码","number":"56619万"},
+{"name":"西涯侠","number":"17254万"},
+{"name":"最佳情侣","number":"64323万"},
+{"name":"国产大英雄 第二季","number":"37596万"},
+{"name":"High 5 制霸青春","number":"26348万"},
+{"name":"极品家丁","number":"12410万"},
+{"name":"左眼诡事","number":"72489万"}]};
+
+function playNum_tx(data, status) {
+    var plantform = status.plantform, //播放平台
+        count = data.content.length,//status.count, //展示数据行数
+        type = status.type; //类型
+
+    var table = $('<div class="oy">\
+        <section>本周<span>' + plantform + '</span>' + type + '播放量TOP' + count + '</section>\
+        <div class="tableWrap2">\
+        <table><thead><tr><th>排名</th><th>' + type + '</th><th>主演</th><th>播放量</th></tr></thead><tbody></tbody></table></div>');
+
+    $.each(data.content, function(i, item) {
+        if (i === count) return false; //只取TOP10
+
+        var tr = $('<tr><td>' + (i + 1) + '</td><td><a href="#" title="'+ item.view +'">' + item.name + '</a></td><td>' + item.actor + '</td><td>' + item.number + '</td></tr>');
+        $(table).find('tbody').append(tr);
+    });
+
+    table.appendTo($('div.deatil-content'));
+}
+function playYk(data, status) {
+    var plantform = status.plantform, //播放平台
+        count = data.content.length,//status.count, //展示数据行数
+        type = status.type; //类型
+
+    var table = $('<div class="oy">\
+        <section>本周<span>' + plantform + '</span>' + type + '播放量TOP' + count + '</section>\
+        <div class="tableWrap2">\
+        <table><thead><tr><th>排名</th><th>' + type + '</th><th>播放量</th></tr></thead><tbody></tbody></table></div>');
+
+    $.each(data.content, function(i, item) {
+        if (i === count) return false; //只取TOP10
+
+        var tr = $('<tr><td>' + (i + 1) + '</td><td>' + item.name + '</td><td>' + item.number + '</td></tr>');
+        $(table).find('tbody').append(tr);
+    });
+
+    table.appendTo($('div.deatil-content'));
+}
+
     $(function() {
-        $("#key_words_1").jQCloud(word_list_1);
+
+        playNum_tx(tx, {
+                plantform: '腾讯',
+                type: '网剧',
+        });
+
+
+        playYk(youku, {
+                plantform: '优酷',
+                type: '网剧',
+        });
+
+        //$("#key_words_1").jQCloud(word_list_1);
         //$("#key_words_2").jQCloud(word_list_1);
     });
+    
     </script>
 </body>
 
