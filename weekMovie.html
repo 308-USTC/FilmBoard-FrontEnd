@@ -123,7 +123,6 @@ l
                         <ul class="nav nav-tabs product-details-nav">
                             <li class="active"><a href="#tab1" data-toggle="tab">图表数据</a></li>
                             <li><a href="#tab2" data-toggle="tab">基本信息</a></li>
-                            <li><a href="#tab3" data-toggle="tab">其他信息</a></li>
                         </ul>
                         <!-- Tab Content (Full Description) -->
                         <div class="tab-content product-detail-info">
@@ -131,16 +130,11 @@ l
                                 <div id="bar_stack_container" style="height: 500px; width: 100%;"></div>
                                 <div id="map_container" style="height: 700px; width: 100%;"></div>
                                 <div id="pie2_container" style="height: 300px; width: 100%;"></div>
-                                <section style="text-align: center;">
-                                    <h2>热词</h2>
-                                </section>
+                                <section style="text-align: center;"><h2>热词</h2></section>
                                 <div id="key_words" class="cloud" style="height: 300px; width: 100%;"></div>
                             </div>
                             <!-- Tab Content (Specification) -->
                             <div class="tab-pane" id="tab2"><table></table></div>
-                            <div class="tab-pane" id="tab3">
-                                <p>其他数据收集整理ing......</p>
-                            </div>
                         </div>
                     </div>
                 </div>
@@ -364,14 +358,23 @@ console.log(cityBox);
 
 $('.price').html(cityBox.data[0].totalBox);
 
-var citydata = [];
+var citydata = [], piedata = [], regionName = [];
+
+//从4开始为城市票房
+for(var i = 0; i < 4; ++i){
+    regionName.push(cityBox.data[i].cityName);
+    piedata.push({name: cityBox.data[i].cityName, radius:[ 100-i*10, 110-i*10],
+        data:[
+        {value: parseFloat(cityBox.data[i].viewerNum), name:'观影人次（万）'}, 
+        { value: parseFloat(cityBox.data[0].viewerNum)- parseFloat(cityBox.data[i].viewerNum)}, 
+        ]});
+}
 
 //从4开始为城市票房
 for(var i = 4; i < cityBox.data.length; ++i){
     citydata.push({name: cityBox.data[i].cityName, value: parseFloat(cityBox.data[i].totalBox)});
 }
 
-console.log(citydata);
 
     var map_dom = document.getElementById("map_container");
     var map_Chart = echarts.init(map_dom);
@@ -430,6 +433,13 @@ console.log(citydata);
 
 
     map_Chart.setOption(map_option, true);
+
+
+    ////////////////////////////////////////////////
+
+    ////////////////////////////////////////////////
+
+
 
 
     ////////////////////////////////////////////////

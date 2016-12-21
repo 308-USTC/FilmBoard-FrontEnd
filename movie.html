@@ -23,11 +23,6 @@
     <link rel="stylesheet" href="css/charts.css">
     <link href="http://cdn.bootcss.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
     <style>
-        .deatil-content .deatil-head,
-        .detail-super-title section:first-child,
-        .detail-title-index {
-            background-color: #fff;
-        }
         
         .detail-super-title section:last-child,
         .detail-title-border {
@@ -41,6 +36,10 @@
         
         .twoCompare td:last-child {
             color: black;
+        }
+
+        .oy .chart{
+        	height: 300px;
         }
     </style>
     <script src="js/modernizr-2.6.2-respond-1.1.0.min.js"></script>
@@ -110,7 +109,7 @@
                 </section>
 
 
-                <section id="youku"><b>优酷<span>本周电影播放量</span></b>
+                <section id="youku"><b>优酷<span>本日播放量TOP10</span>电影<span>总播放量</span></b>
                 <div class="chart"></div>
                 </section>
 
@@ -389,9 +388,20 @@ $('#updateTime').html('2016年12月20日');
 //////////////////////////////////
 // build a color map as your need.
 var colorList = [
-    '#C1232B', '#B5C334', '#FCCE10', '#E87C25', '#27727B',
-    '#FE8463', '#9BCA63', '#FAD860', '#F3A43B', '#60C0DD',
-    '#D7504B', '#C6E579', '#F4E001', '#F0805A', '#26C0C0'
+'#FF2E12',
+'#1FAEFF',
+'#FF981D',
+'#bbb',
+'#bbb',
+'#bbb',
+'#bbb',
+'#bbb',
+'#bbb',
+'#bbb',
+'#bbb',
+//  '#C1232B', '#B5C334', '#FCCE10', '#E87C25', '#27727B',
+//  '#FE8463', '#9BCA63', '#FAD860', '#F3A43B', '#60C0DD',
+//  '#D7504B', '#C6E579', '#F4E001', '#F0805A', '#26C0C0'
 ];
      
 var value = [];
@@ -406,7 +416,10 @@ for(var i = 0; i < tenxun.content.length; ++i){
 
 var ls_option = {
     textStyle: {fontWeight: 'bold'},
-    grid:{left: 150},
+	grid:{
+		left: 180,
+        right: '5%',
+	},
     tooltip : {
     	trigger: 'axis',
         axisPointer : {            // 坐标轴指示器，坐标轴触发有效
@@ -425,6 +438,7 @@ var ls_option = {
         axisLine: {show: false, lineStyle: {color: '#000'}},
         axisTick: {show: false, lineStyle: {color: '#000'}},
     	axisLabel: {
+    		rotate: 10,
     		formatter: function(value, index){
     			return index+1 + ': ' + value;
     		}
@@ -454,6 +468,16 @@ var ls_option = {
         			position: 'right',
         		},
         	},
+        	itemStyle:{
+        		normal:{
+        			color: function(p){
+        				console.log(p);
+        				return colorList[p.dataIndex];
+        			},
+        			//shadowBlur: 80,
+        			//shadowColor: 'rgba(0, 0, 0, 0.5)'
+        		}
+        	},
         	data: value,
 
         }
@@ -467,7 +491,6 @@ var tx =echarts.init($('#tx div')[0]);
 tx.setOption(ls_option,true);
 
 tx.setOption({
-	grid:{left: 100},
 	color: [colorList[10]],
 	yAxis:[{data:rt}],
 	series:[{data:value}]
@@ -483,7 +506,6 @@ for(var i = 0, rt=[], value=[]; i<leshi.content.length; ++i){
 var ls = echarts.init($('#leshi div')[0]);
 ls.setOption(ls_option,true);
 ls.setOption({
-	grid:{left: 150},
 	color: [colorList[2]],
 	yAxis:[{data:rt}],
 	series:[{data:value}]
@@ -500,7 +522,6 @@ var youku = echarts.init($('#youku div')[0])
 youku.setOption(ls_option,true);
 
 youku.setOption({
-	grid:{left: 200},
 	color: ['#26C0C0'],
 	yAxis:[{data:rt}],
 	series:[{data:value}]
@@ -520,7 +541,6 @@ baidu.setOption({
 	tooltip:{formatter:function(params){ //若要添加简介等文字，则需要将变量数组放在次函数内
         return params[0].dataIndex + 1 + "." + params[0].name + '<br/><span style="display:inline-block;margin-right:5px;border-radius:10px;width:9px;height:9px;background-color:'+ colorList[params[0].dataIndex] +'"></span> 搜索指数：' + params[0].value +'<br/> <img src="img/pic/movie'+ (parseInt(params[0].dataIndex)+1) +'.jpg"> <br/>';
 	}},
-	grid:{left: 150},
 	color: [colorList[0]],
 	yAxis:[{data:rt,name:''}],
 	itemStyle:{normal:{
